@@ -1,0 +1,28 @@
+{
+  "name": "javascript-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decodejacques/javascript-fundamentals.git"
+  },
+  "author": "Jacques Le Normand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decodejacques/javascript-fundamentals/issues"
+  },
+  "homepage": "https://github.com/decodejacques/javascript-fundamentals#readme"
+}
