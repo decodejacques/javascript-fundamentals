@@ -10,22 +10,6 @@ function desirability(x) {
     }
 }
 
-function printDesirability(x) {
-    if(x == 'Brad Pitt') {
-        console.log("very desirable");
-    } else {
-        console.log("not so desirable");
-    }
-}
-
-function specificDesirability(x) {
-    if(x == 'Brad Pitt') {
-        console.log("very desirable");
-    } else {
-        console.log(x + " is not so desirable");
-    }
-}
-
 function broadenHorizon(x) {
     if(x == 'Brad Pitt') {
         return "very desirable";
@@ -35,3 +19,5 @@ function broadenHorizon(x) {
         return "not desirable";
     }
 }
+
+module.exports = {desirability, broadenHorizon}
