@@ -11,7 +11,7 @@ setTimeout = function(f, t) {
 
 var greet = require('../../src/callbacks/problem1.js');
 
-describe('bind', function() {
+describe('callbacks', function() {
     it('it should shout after 1 second ', function() {
         expect(targ).to.eql(1000);
     });
