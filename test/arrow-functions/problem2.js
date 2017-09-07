@@ -18,6 +18,4 @@ describe('arrow functions', function() {
     it('z stays the same', function() {
         expect(arrowfuncs.z(3)).to.eql(2);
     });
-    
-
 });

@@ -4,4 +4,4 @@ function greet() {
 }
 // bind greet to bob
 
-module.exports = {greet};
+module.exports = greet;
