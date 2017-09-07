@@ -1,7 +1,7 @@
 // Correct all the mistakes in this file
 
 class Shape {
-    construtor(shapeName) {
+    constructor(shapeName) {
         this.shapName = shapeName;
     }
     toString() {
@@ -11,12 +11,12 @@ class Shape {
 }
 
 class Square {
-    construtor(size) {
+    constructor(size) {
         supr("square");
         this.size = size;
     }
     area() {
-        return this.size * this.size;
+        return this.size * this.siz;
     }
     perimeter() {
        return this.size * 4;
