@@ -1,0 +1,13 @@
+What does the following print out?
+
+function f() {
+    throw 500;
+}
+
+function g() {
+    try{
+        f();
+    } catch(err) {
+        console.log(err);
+    }
+}

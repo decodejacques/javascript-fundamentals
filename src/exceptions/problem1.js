@@ -20,7 +20,7 @@ function assignFlight(name) {
     var flightNumber = ((name.length * 7) % 20) + "0";
     var terrorSuspects = ["bob", "eric", "susie"];
 
-    //if the name is a terror suspect, throw an exception
+    // if the name is a terror suspect, throw an exception
     // Otherwise, return the flight number
 }
 

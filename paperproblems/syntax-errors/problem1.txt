@@ -1,0 +1,10 @@
+Spot the syntax error
+
+a = {
+    b : {
+        x : 10
+    }
+    c : {
+        y : 15
+    }
+}

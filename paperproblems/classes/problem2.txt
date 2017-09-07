@@ -1,14 +1,22 @@
-Draw the object diagram for the following program.
+What is the output of this program?
 
-class Dog {
-    constructor(breed, age, gender) {
-        this.breed = breed;
+class Person {
+    constructor(age, name, salary) {
         this.age = age;
-        this.gender = gender;
+        this.name = name;
+        this.salary = salary;
     }
-    bark() {
-        console.log("Woof.");
+    increaseSalary(amount) {
+        console.log("Yay!");
+        this.salary = this.salary + amount;
+    }
+    toString() {
+        return "My name is " + this.name +
+          "and I'm " + this.age + " and I make " + this.salary;
     }
 }
 
-var someDog = new Dog("schnitzel", 2, "male");
+var bob = new Person(25, "Bob", 40000);
+
+bob.increaseSalary(-500);
+console.log(bob.toString());

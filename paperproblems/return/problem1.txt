@@ -1,0 +1,9 @@
+What does this program output?
+
+function f() {
+    return 5;
+    return "hello";
+}
+
+console.log(f());
+

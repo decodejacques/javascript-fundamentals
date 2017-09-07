@@ -1,0 +1,23 @@
+What does the following print out?
+
+function f() {
+    throw 500;
+}
+
+function h() {
+    try{
+        f();
+    } catch(err) {
+        console.log(err);
+        throw "some error";
+    }
+}
+
+
+function g() {
+    try{
+        h();
+    } catch(err) {
+        console.log(err);
+    }
+}

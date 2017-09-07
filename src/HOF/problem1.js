@@ -1,4 +1,3 @@
-// You need to do problem 1 and 2 in the paperproblems directory before attempting these problems
 
 function callNoException(f, arg) {
     // if f(arg) throws an exception, return null
@@ -48,3 +47,17 @@ function filter(lst, f) {
     // Basically, map returns a new array created by applying f
     //   to the elements of the original array
 }
+
+function every(lst, f) {
+    // lst is an array and f is a function
+    // f takes 1 arguments and returns a boolean
+    // filter(lst, f) returns a true if f returns true for every element of lst
+    
+    // Example
+    // every([2,4,12], x => x % 2 == 0) returns true
+    // every([2,3,12], x => x % 2 == 0) returns false
+    
+}
+
+
+module.exports = {callNoException, callNoNull, exceptionalize, nullify, map, filter, every};

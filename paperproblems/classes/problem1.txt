@@ -1,7 +1,14 @@
-Define a class for a rectangle.
-Rectangles have the following attributes:
- - a height
- - a width
-Rectangles also have the following methods:
- - area (calculates the area)
- - perimeter (calculates the perimeter)
+Draw the object diagram for the following program.
+
+class Dog {
+    constructor(breed, age, gender) {
+        this.breed = breed;
+        this.age = age;
+        this.gender = gender;
+    }
+    bark() {
+        console.log("Woof.");
+    }
+}
+
+var someDog = new Dog("schnitzel", 2, "male");
