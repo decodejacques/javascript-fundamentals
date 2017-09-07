@@ -16,7 +16,8 @@ function greet(lst) {
 
 function greetLong(lst) {
     // lst is an array of strings
-    // Only greet people who's names have length at least 4. Otherwise ignore them completely.
+    // Only greet people who's names have length at least 4.
+    // Otherwise ignore them completely.
     // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
 }
 
@@ -25,4 +26,4 @@ function allLong(lst) {
     // Returns true if every element of lst is of length at least 5. Otherwise returns false.
 }
 
-module.exports = {removeEvents, keepLong, greet, greetLong, allLong};
+module.exports = {removeEvens, keepLong, greet, greetLong, allLong};
