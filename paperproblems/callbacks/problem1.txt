@@ -1,0 +1,15 @@
+What does the following program do?
+
+function g() {
+    console.log("Hello!")
+}
+
+function f() {
+    setTimeout(g, 500);
+}
+
+function h() {
+    setTimeout(f, 1000);
+}
+
+setTimeout(h, 200);

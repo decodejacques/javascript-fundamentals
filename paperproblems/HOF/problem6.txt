@@ -1,0 +1,15 @@
+function f(g) {
+    g.bind({name: "Diana"});
+}
+
+function soften(f) {
+    function ret(name) {
+        var r = f(name);
+        if(r !== "I do!") return "maybe";
+        else return r;
+    }
+    return ret;
+}
+
+var softAskOnADate = soften(askOnADate);
+console.log(doYouLoveMe("Eric"));

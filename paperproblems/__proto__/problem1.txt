@@ -1,0 +1,10 @@
+Draw the object diagram for this program
+
+var x1 = {};
+var x2 = {};
+var x3 = {};
+var x4 = {};
+x2.__proto__ = x1;
+x3.__proto__ = x2;
+x4.__proto__ = x3;
+

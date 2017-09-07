@@ -1,0 +1,14 @@
+When you type the following in your developer console:
+
+a = {};
+b = {};
+a.__proto__ = b;
+b.__proto__ = a;
+
+You get the following exception:
+
+    Uncaught TypeError: Cyclic __proto__ value
+
+
+a) Explain what this exception means.
+b) Why does this exception exist? What's wrong with a cyclic __proto__ value?

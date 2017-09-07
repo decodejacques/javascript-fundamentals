@@ -1,0 +1,15 @@
+What does this program output?
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        console.log("Hello my name is " + this.name);
+    }
+}
+
+var bob = new Person("Bob", 30);
+
+Person.prototype.leave = function() {return this.name + " is leaving";}
+
+bob.leave();

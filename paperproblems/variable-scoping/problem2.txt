@@ -1,0 +1,10 @@
+What is the output of this program?
+
+function f() {
+    var x = 1;
+    x = x * 2;
+    console.log(x);
+}
+
+f();
+f();

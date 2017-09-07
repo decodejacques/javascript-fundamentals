@@ -1,0 +1,16 @@
+What is the output of this program?
+
+var animals = [
+    {species: 'dog', name: 'Nacho'},
+    {species: 'cat', name: 'Ramses'},
+    {species: 'bunny',name: 'Flufftail'},
+    {species: 'dog', name: 'Popcorn'},
+    {species: 'giraffe', name: 'Neckbeard'},
+    {species: 'possum', name: ''}
+];
+
+var dogs = animals.filter(
+                function(animal)
+                     {return animal.species === 'dog';});
+
+console.log(dogs.length);

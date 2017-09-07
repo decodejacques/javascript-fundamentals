@@ -1,0 +1,12 @@
+What is the output of this program?
+
+'use strict';
+
+var obj = {
+    bar: function() {console.log(this.baz);},
+    baz: 12
+}
+
+obj.bar = obj.bar.bind({baz: 4});
+
+obj.bar();

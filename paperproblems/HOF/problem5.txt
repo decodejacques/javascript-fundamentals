@@ -1,0 +1,17 @@
+function askOnADate(name) {
+    if(name === "Bob") return "I do!";
+    else return "Absolutely not!";
+}
+
+function soften(f) {
+    function ret(name) {
+        var r = f(name);
+        if(r !== "I do!") return "maybe";
+        else return r;
+    }
+    return ret;
+}
+
+var softAskOnADate = soften(askOnADate);
+console.log(softAskOnADate("Eric"));
+console.log(softAskOnADate("Bob"));

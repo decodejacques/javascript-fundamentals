@@ -1,0 +1,17 @@
+What is the output of this program?
+
+var x1 = {};
+var x2 = {};
+var x3 = {};
+var x4 = {};
+x2.__proto__ = x1;
+x3.__proto__ = x2;
+x4.__proto__ = x3;
+
+x1.age = 20;
+x3.age = 18;
+
+console.log(x1.age);
+console.log(x2.age);
+console.log(x3.age);
+console.log(x4.age);

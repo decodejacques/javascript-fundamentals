@@ -1,0 +1,30 @@
+Someone has given you a function called filter
+You don't know what it does, but there are clues at the bottom of this file
+Use these clues to describe what filter is.
+Specifically:
+ - How many parameters does it have
+ - What are the types of the parameters
+ - What does it do?
+
+
+
+var evenNumbers = [2, 4, 6, 8, 10];
+var oddNumbers = [3, 5, 7, 9];
+var someNumbers = [1, 2, 3, 4];
+
+function isEven(x) {
+    if(x % 2 == 0) return true;
+    else return false;
+}
+
+function isOdd(x) {
+    if(x % 2 == 1) return true;
+    else return false;
+}
+
+filter(evenNumbers, isEven) => [2, 4, 6, 8, 10]
+filter(evenNumbers, isOdd)  => []
+filter(oddNumbers, isEven)  => []
+filter(oddNumbers, isOdd)   => [3, 5, 7, 9]
+filter(someNumbers, isEven) => [2, 4]
+filter(someNumbers, isOdd)  => [1, 3]

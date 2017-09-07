@@ -1,0 +1,11 @@
+What is the output of this program?
+
+'use strict';
+
+function foo() {
+    console.log(this.baz);
+}
+
+var obj = {bar: foo, baz: 8};
+obj.foo();
+

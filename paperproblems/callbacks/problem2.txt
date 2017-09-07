@@ -1,0 +1,11 @@
+What does the following program do?
+
+function g() {
+    console.log("Hello!")
+}
+
+function h() {
+    setInterval(g, 1000);
+}
+
+setInterval(h, 1000);

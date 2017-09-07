@@ -1,0 +1,14 @@
+Draw the object diagram for the following program.
+
+class Dog {
+    constructor(breed, age, gender) {
+        this.breed = breed;
+        this.age = age;
+        this.gender = gender;
+    }
+    bark() {
+        console.log("Woof.");
+    }
+}
+
+var someDog = new Dog("schnitzel", 2, "male");

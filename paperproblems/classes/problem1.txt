@@ -1,0 +1,7 @@
+Define a class for a rectangle.
+Rectangles have the following attributes:
+ - a height
+ - a width
+Rectangles also have the following methods:
+ - area (calculates the area)
+ - perimeter (calculates the perimeter)

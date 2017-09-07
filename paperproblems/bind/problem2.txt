@@ -1,0 +1,18 @@
+What is the output of this program?
+
+'use strict';
+
+var bob = {
+    name: "Bob",
+	introduction: function() {console.log("Hi I'm " + this.name);}
+}
+
+var eric = { name: "Eric" };
+
+bob.introduction = bob.introduction.bind(bob);
+
+eric.introduction = bob.introduction;
+
+eric.introduction = eric.introduction.bind({name: "Steve"});
+
+eric.introduction();

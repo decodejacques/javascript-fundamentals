@@ -1,0 +1,15 @@
+Draw the object diagram for the following program. 
+Hints: 
+  - There are two variables: makePerson and bob
+  - makePerson has a property called prototype
+  - bob has properties constructor and __proto__
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        console.log("Hello my name is " + this.name);
+    }
+}
+
+var bob = new Person("Bob", 30);
