@@ -1,4 +1,4 @@
-// Fix all the errors. It should print HELLO once every second
+// Fix all the errors. It should print hello after 1 second
 
 function shout(x) {
     console.log(x.toUppercase());
