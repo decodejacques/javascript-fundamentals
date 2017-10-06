@@ -61,7 +61,7 @@ function nullify(f) {
 function map(lst, f) {
     // lst is an array and f is a function
     // map returns an array with the same number of elements as lst
-    // if lst = [a1, a2, a3, a4, a5] then map(lst, f) returns [f(a1, a2, a3, a4, a5)]
+    // if lst = [a1, a2, a3, a4, a5] then map(lst, f) returns [f(a1), f(a2), f(a3), f(a4), f(a5)]
     // map returns a new array created by applying f
     //   to the elements of the original array
     //
