@@ -1,7 +1,3 @@
-function f(g) {
-    g.bind({name: "Diana"});
-}
-
 function soften(f) {
     function ret(name) {
         var r = f(name);
@@ -10,6 +6,9 @@ function soften(f) {
     }
     return ret;
 }
-
+function askOnADate(name) {
+    if(name === "Bob") return "I do!";
+    else return "Absolutely not!";
+}
 var softAskOnADate = soften(askOnADate);
-console.log(doYouLoveMe("Eric"));
+console.log(softAskOnADate("Eric"));
