@@ -1,3 +1,5 @@
+What is the output of this program? Don't cheat by running it!
+
 function askOnADate(name) {
     if(name === "Bob") return "I do!";
     else return "Absolutely not!";
