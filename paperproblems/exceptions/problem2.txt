@@ -21,3 +21,5 @@ function g() {
         console.log(err);
     }
 }
+
+g();
