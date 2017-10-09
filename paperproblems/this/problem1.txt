@@ -7,5 +7,5 @@ function foo() {
 }
 
 var obj = {bar: foo, baz: 8};
-console.log(obj.bar());
+obj.bar();
 
