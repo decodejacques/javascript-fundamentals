@@ -1,6 +1,6 @@
 Rewrite this program so that it doesn't have a single function definition
 In other words, replace all the function definitions with anonymous functions
-The final program should have one line
+The final program should be on a single line
 
 
 function greet(x) {
