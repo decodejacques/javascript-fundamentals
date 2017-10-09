@@ -1,8 +1,5 @@
 Rewrite this program so that it doesn't have a single function definition
 In other words, replace all the function definitions with anonymous functions
-Use arrow functions.
-The 'function' keyword should not appear in your program
-
 
 function greet(x, y) {
     console.log("hello " + x + " " + y);
