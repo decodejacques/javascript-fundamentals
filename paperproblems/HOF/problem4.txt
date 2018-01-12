@@ -13,3 +13,17 @@ function f(g, h) {
 }
 
 console.log(f(k, m));
+
+******************************************< ANSWER >********************************************
+
+This will return an error, because the 3 arguments of k and the argument of m are never actually specified anywhere.
+
+Specifically:
+f would *not* take the result of k as parameters to be passed down to itself; 
+rather, function f calls function k in an attempt to evaluate parameters it could pass into/as its argument g. However, function k is being called without any arguments -- and its arguments are necessary to evaluate the returned value.
+Moreover, nothing is passed as an argument for m (as x). Double whammy.
+
+This program won't be able to add or multiply numbers to undefined arguments.
+I expect this will output either a type error or NaN (honestly, I'm not sure which).
+
+*****************************************</ ANSWER >********************************************

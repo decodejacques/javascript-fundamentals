@@ -2,9 +2,27 @@ Someone has given you a function called map
 You don't know what it does, but there are clues at the bottom of this file
 Use these clues to describe what map is.
 Specifically:
- - How many parameters does it have
- - What are the types of the parameters
+
+****************************************< ANSWER >**********************************************
+
+ - How many parameters does it have?
+   * 2
+
+ - What are the types of the parameters?
+   * 1st argument is an array (...technically an 'object', but whatever. :D)
+   * 2nd argument is a function;
+
  - What does it do?
+   1) First, we see that in all cases: it returns an array.
+   2) It iterates through each element in the array passed as the first argument, and 
+   3) performs, via the function passed as the second argument, an operation on the 
+      current element, then pushes its result (the returned value) to the resulting 
+      array (presented in step 1).
+   4) The result, therefore, is an array of new elements that have been generated 
+      based on operations performed on the array's elements (within arg1) in the passed 
+      function (arg2).
+
+***************************************< /ANSWER >**********************************************
 
 var someNumbers = [1, 2, 3, 4];
 var someStrings = ["bob", "ERIC"];

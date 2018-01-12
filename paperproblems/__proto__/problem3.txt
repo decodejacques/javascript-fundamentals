@@ -11,4 +11,12 @@ You get the following exception:
 
 
 a) Explain what this exception means.
+   * A __proto__ object would be generated and destroyed (overriden by an empty object, 
+     which itself points to a __proto__ object...) over and over again, indefintely.
+     It is an endless loop and therefore cyclic.
+     Ergo: a creepy, ouroboric, self-cannibalistic mess that must be avoided at all costs. :)
+
 b) Why does this exception exist? What's wrong with a cyclic __proto__ value?
+   * This happens because we're trying to override the entirety of the __proto__ object, 
+     which is a feature (implicit object) required to allow for Object-Oriented Programming in JavaScript.
+     An override would result in an infinite loop; because objects point to the __proto__ object when instantiated...

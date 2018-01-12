@@ -23,3 +23,6 @@ function g() {
 }
 
 g();
+
+**************************************** ANSWER : 500 (caught in h())
+                                                  "some error" (caught in g())

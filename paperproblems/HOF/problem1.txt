@@ -2,11 +2,28 @@ Someone has given you a function called filter
 You don't know what it does, but there are clues at the bottom of this file
 Use these clues to describe what filter is.
 Specifically:
- - How many parameters does it have
- - What are the types of the parameters
+
+****************************************< ANSWER >**********************************************
+
+ - How many parameters does it have?
+   * 2
+
+ - What are the types of the parameters?
+   * 1st argument is an array (...technically an 'object', but whatever. :D)
+   * 2nd argument is a function;
+
  - What does it do?
+   1) First, we see that in all cases: it returns an array.
+   2) It iterates through each element in the array passed as the first argument, and 
+   3) checks, via the function passed as the second argument, whether the current element
+      evaluates to true or false in the conditional statements (if/else) executed within
+      the passed function...
+      a) If the expression evaluates to true: filter pushes the current element 
+         in the resulting array (presented in step 1);
+      b) If the expression evaluates to false: the element is not pushed to the resulting array.
+   4) The result, therefore, is an array of elements that passed the conditional tests as true.
 
-
+***************************************</ ANSWER >**********************************************
 
 var evenNumbers = [2, 4, 6, 8, 10];
 var oddNumbers = [3, 5, 7, 9];

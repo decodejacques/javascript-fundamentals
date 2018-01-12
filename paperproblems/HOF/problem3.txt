@@ -9,3 +9,18 @@ function f(g) {
 }
 
 console.log(f(k));
+
+******************************************< ANSWER >********************************************
+
+This will return an error, because the 2 arguments of k are never actually specified anywhere
+(and certainly not by g...!)
+
+Specifically:
+k would *not* take the result of g as parameters to be passed down to itself; 
+rather, function f calls function k in an attempt to evaluate parameters it could pass into/as
+its argument g. However, function k is being called without any arguments -- and its arguments
+are necessary to evaluate the returned value.
+This program won't be able to add or multiply numbers to undefined arguments.
+I expect this will output either a type error or NaN (honestly, I'm not sure which).
+
+*****************************************</ ANSWER >********************************************
