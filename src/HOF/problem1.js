@@ -9,6 +9,12 @@ function callNoException(f, arg) {
     //  }
     //  callNoException(throwsZero, 0) returns null
     //  callNoException(throwsZero, 12) returns 12
+    try {
+        f(arg);
+    } catch (err) {
+        return null;
+    }
+    return f(arg);
 }
 
 function callNoNull(f, arg) {
@@ -21,8 +27,8 @@ function callNoNull(f, arg) {
     //  }
     // callNoNull(nullZero, 0) throws an exception
     // callNoNull(nullZero, 12) returns 12
-    
-    
+    if (f(arg) === null) {throw new Error("Argument expected")}
+    return f(arg);
 }
 
 function exceptionalize(f) {
@@ -39,7 +45,11 @@ function exceptionalize(f) {
     // exceptionalize(nullZero) returns a function g such that
     // g(0) throws an exception
     // g(12) returns 12
-
+    const g = arg => {
+        if (f(arg) === null) {throw new Error("Argument expected.")}
+        return f(arg);
+    }
+    return g;
 }
 
 function nullify(f) {
@@ -55,7 +65,15 @@ function nullify(f) {
     //  nullify(throwsZero) returns a function g such that
     //  g(0) returns null
     //  g(12) throws an exception
-    
+    const g = arg => {
+        try {
+            f(arg);
+        } catch (err) {
+            return null;
+        }
+        return f(arg);
+    }
+    return g(f);
 }
 
 function map(lst, f) {
@@ -69,6 +87,7 @@ function map(lst, f) {
     //
     // function toUpperCase(str) { return str.toUpperCase(); }
     // map(["bob", "susie"], toUpperCase) returns ["BOB", "SUSIE"]
+    return lst.map(e => f(e));
 }
 
 function filter(lst, f) {
@@ -82,7 +101,8 @@ function filter(lst, f) {
     //   
     // Example:
     // function isEven(x) {return x % 2 == 0;}
-    // filter([1, 2, 3, 4, 5], isEven) returns [2,4];   
+    // filter([1, 2, 3, 4, 5], isEven) returns [2,4];
+       return lst.filter(e => f(e));
 }
 
 function every(lst, f) {
@@ -92,9 +112,9 @@ function every(lst, f) {
     
     // Example
     // every([2,4,12], x => x % 2 == 0) returns true
-    // every([2,3,12], x => x % 2 == 0) returns false    
+    // every([2,3,12], x => x % 2 == 0) returns false
+    return lst.every(e => f(e));
 }
-
 
 module.exports = {
     callNoException, 
