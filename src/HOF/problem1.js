@@ -1,5 +1,12 @@
 
 function callNoException(f, arg) {
+
+    try {
+        return f(arg);
+    }
+    catch(err) {
+        return null;
+    }
     // if f(arg) throws an exception, return null
     // otherwise return what f(arg) returned
     // Example:
@@ -12,6 +19,10 @@ function callNoException(f, arg) {
 }
 
 function callNoNull(f, arg) {
+    if (f(arg) == null) {
+        throw new Error("f(arg) is not null");
+    }
+    return f(arg);
     // if f(arg) returns null, throw an exception
     // otherwise return what f(arg) returned  
     // Example: 
@@ -26,6 +37,15 @@ function callNoNull(f, arg) {
 }
 
 function exceptionalize(f) {
+
+    var k = function(arg){
+        if (f(arg) == null) {
+            throw new Error("f(arg) is null")
+        }
+        return f(arg);
+    }
+    return k;
+
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) is null, this new function throws an exception
@@ -43,6 +63,17 @@ function exceptionalize(f) {
 }
 
 function nullify(f) {
+
+    var k = function(arg) {
+        try {
+            f(arg);
+        }
+        catch(err) {
+            return null;
+        }
+        return f(arg);
+    }
+    return k;
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) throws an exception, this new function returns null
@@ -59,6 +90,14 @@ function nullify(f) {
 }
 
 function map(lst, f) {
+
+    var arr = [];
+
+    for (var i = 0; i < lst.length; i++) {
+        arr.push(f(lst[i]));
+    }
+
+    return arr;
     // lst is an array and f is a function
     // map returns an array with the same number of elements as lst
     // if lst = [a1, a2, a3, a4, a5] then map(lst, f) returns [f(a1), f(a2), f(a3), f(a4), f(a5)]
@@ -72,6 +111,15 @@ function map(lst, f) {
 }
 
 function filter(lst, f) {
+    var arr = [];
+
+    for (var i = 0; i < lst.length; i++) {
+        if (f(lst[i])) {
+            arr.push(lst[i])
+        }
+    }
+
+    return arr;
     // lst is an array and f is a function
     // f takes one argument and returns a boolean (true or false)
     // filter(lst, f) returns a list with all the elements of lst that does not satisfy f removed
@@ -86,6 +134,16 @@ function filter(lst, f) {
 }
 
 function every(lst, f) {
+
+    var out = true;
+
+    for (var i = 0; i < lst.length; i++) {
+        if (f(lst[i]) == false) {
+            var out = false;
+        }
+    }
+
+    return out;
     // lst is an array and f is a function
     // f takes 1 arguments and returns a boolean
     // filter(lst, f) returns a true if f returns true for every element of lst
