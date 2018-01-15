@@ -7,6 +7,7 @@ var obj = {
     baz: 12
 }
 
-var g = obj.bar;
+var g = obj.bar();
 g();
 
+--> wont be able to console.log baz because this.baz returns undefined.

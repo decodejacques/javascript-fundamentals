@@ -16,3 +16,5 @@ eric.introduction = bob.introduction;
 eric.introduction = eric.introduction.bind({name: "Steve"});
 
 eric.introduction();
+
+--> Hi I'm Bob

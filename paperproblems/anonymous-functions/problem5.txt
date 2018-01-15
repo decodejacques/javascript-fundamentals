@@ -15,5 +15,7 @@ function soften(f) {
 }
 
 var softAskOnADate = soften(askOnADate);
-console.log(softAskOnADate("Eric"));
-console.log(softAskOnADate("Bob"));
+console.log(softAskOnADate("Eric")); --> maybe
+console.log(softAskOnADate("Bob"));--> I do!
+
+ 

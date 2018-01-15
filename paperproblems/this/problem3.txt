@@ -15,3 +15,4 @@ var obj2 = {
 obj2.bar = obj.bar;
 obj2.bar();
 
+--> 12
