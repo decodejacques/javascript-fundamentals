@@ -66,12 +66,11 @@ function nullify(f) {
 
     var k = function(arg) {
         try {
-            f(arg);
+            return f(arg);
         }
         catch(err) {
             return null;
         }
-        return f(arg);
     }
     return k;
     // returns a new function
