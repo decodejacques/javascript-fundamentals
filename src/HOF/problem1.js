@@ -1,5 +1,15 @@
 
-function callNoException(f, arg) {
+    function callNoException(f, arg) {
+        
+        try {
+            f(arg);
+        }
+        catch(err) {
+            return null;
+        }
+        return arg;
+    
+    }
     // if f(arg) throws an exception, return null
     // otherwise return what f(arg) returned
     // Example:
@@ -9,9 +19,28 @@ function callNoException(f, arg) {
     //  }
     //  callNoException(throwsZero, 0) returns null
     //  callNoException(throwsZero, 12) returns 12
-}
 
-function callNoNull(f, arg) {
+
+    function callNoNull(f, arg) {
+        
+        
+      
+        try { f(arg)
+        if (f(arg) === null) {
+            throw  "it's null";
+        }
+    
+        
+        return arg
+        
+    }
+        catch(err){ throw new Error ("null alert!");
+
+    }
+}     
+  
+                      
+                      
     // if f(arg) returns null, throw an exception
     // otherwise return what f(arg) returned  
     // Example: 
@@ -22,10 +51,40 @@ function callNoNull(f, arg) {
     // callNoNull(nullZero, 0) throws an exception
     // callNoNull(nullZero, 12) returns 12
     
-    
-}
+    var exceptionalize = function(f) {
+        return function g(arg) {
+            arg = f
 
-function exceptionalize(f) {
+            if (arg !== null );
+            return arg;
+        
+            
+            try {
+              
+                g(f);
+            
+            if (arg === null){
+               
+ 
+            throw new Error ("error!");
+        }
+        
+       
+           
+         }
+    
+
+        catch(err){ throw new Error ("bazinga!");
+        
+            }
+         return arg   
+        }
+    
+        return arg
+    
+        
+    }
+
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) is null, this new function throws an exception
@@ -40,9 +99,40 @@ function exceptionalize(f) {
     // g(0) throws an exception
     // g(12) returns 12
 
-}
 
-function nullify(f) {
+
+    var nullify = function(f) {
+        return function newFunction(arg) {
+            var numNum = ""
+            try {
+                newFunction(arg);
+            if (arg == 0) throw new Error ("whoops");
+            
+            numNum = arg;
+            return numNum
+        }
+        
+        catch(err) {
+            return null
+        }
+        return numNum;    
+    
+        }
+        return function g(arg) {
+            try {
+                g(numNum)
+            
+            
+            return arg
+            }
+           catch (err) {
+               return null;
+            done()
+           } 
+        }
+    
+    }
+    
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) throws an exception, this new function returns null
@@ -56,9 +146,13 @@ function nullify(f) {
     //  g(0) returns null
     //  g(12) throws an exception
     
-}
+
 
 function map(lst, f) {
+    lst = [a, b];
+    f = {}
+lst.map(function(lst){ return f.toUppercase()}
+
     // lst is an array and f is a function
     // map returns an array with the same number of elements as lst
     // if lst = [a1, a2, a3, a4, a5] then map(lst, f) returns [f(a1), f(a2), f(a3), f(a4), f(a5)]
@@ -69,7 +163,7 @@ function map(lst, f) {
     //
     // function toUpperCase(str) { return str.toUpperCase(); }
     // map(["bob", "susie"], toUpperCase) returns ["BOB", "SUSIE"]
-}
+
 
 function filter(lst, f) {
     // lst is an array and f is a function

@@ -13,18 +13,22 @@ function first(arr) {
 // console.log(first(arr1));
 function detective(i) {
     function suspect(i) {
-        if(i * 7 % 3 === 0) {throw new Error("Bad i!")};
-    } 
-    
+        if(i * 7 % 3 == 0) {throw new Error("Bad i!");
+        
+    } else { throw new Error("everything ok")
+}
+}
     try {
         suspect(i);
     }
-    catch(err) { 
-        return "something fishy";
-    } 
-    
-    return "everything ok"
+    catch(err) {
+         return console.log("something fishy");
+    }
 }
+
+
+
+
 
     
     // detective checks to see if the suspect throws an exception on input i.
@@ -37,15 +41,6 @@ function assignFlight(name) {
     var terrorSuspects = ["bob", "eric", "susie"];
     // if the name is a terror suspect, throw an exception
     // Otherwise, return the flight number
-    if (name == "bob" || name == "eric" || name == "susie") {throw new Error ("terrorist!");
-    }
-    try {
-        assignFlight(name); 
-    }
-    catch(err) {
-        return "terrorist!";
-    }
-    return flightNumber
 }
 
 module.exports = {first, detective, assignFlight}
