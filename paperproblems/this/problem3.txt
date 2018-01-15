@@ -15,3 +15,6 @@ var obj2 = {
 obj2.bar = obj.bar;
 obj2.bar();
 
+----------
+
+wtf?... so obj2.bar = obj.bar makes both console.log(this.baz), then obj2.bar calls it's own baz which is 12? so basically the first part changes the functin being called, but since the function is called from obj2 it looks at it's own baz.

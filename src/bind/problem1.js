@@ -4,4 +4,7 @@ function greet() {
 }
 // bind greet to bob
 
+var greet = greet.bind(bob);
+
+
 module.exports = greet;

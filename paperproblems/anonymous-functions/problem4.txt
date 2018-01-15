@@ -11,3 +11,10 @@ function twice(f) {
 }
 
 twice(greet);
+
+-------------------
+
+var greet = function(x) {console.log("hello " + x);}
+var twice = function(f) {f("bob"); f("mary");}
+
+twice(greet);

@@ -20,8 +20,6 @@ function detective(i) {
 
     function suspect(i) {
         if (i * 7 % 3 == 0) throw new Error("Bad i!");
-
-
     }
     var b = "everything ok";
     return b;

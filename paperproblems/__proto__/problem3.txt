@@ -11,4 +11,7 @@ You get the following exception:
 
 
 a) Explain what this exception means.
+that there is a loop going from a to b to a to b... so an infinite search for answers.
+
 b) Why does this exception exist? What's wrong with a cyclic __proto__ value?
+it will never return anything it will just keep looking.
