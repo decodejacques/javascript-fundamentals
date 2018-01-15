@@ -73,7 +73,7 @@ function nullify(f) {
         }
         return f(arg);
     }
-    return g(f);
+    return g;
 }
 
 function map(lst, f) {
