@@ -1,13 +1,7 @@
 Rewrite this program so that it doesn't have a single function definition
 In other words, replace all the function definitions with anonymous functions
 
-function greet(x) {
-    console.log("hello " + x);
-}
-
-function twice(f) {
+(function (f) {
     f("bob");
     f("mary");
-}
-
-twice(greet);
+})(function (x) {console.log("hello " + x);})
