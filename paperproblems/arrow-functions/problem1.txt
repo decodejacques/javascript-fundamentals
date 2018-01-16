@@ -17,3 +17,9 @@ f) (x) => x * 2
 e) () => console.log("hello")
 
 When you're done, check all your answers in the developer console.
+
+b) error
+c) returns x*2
+d) logs z returns x * z'
+e) take away parenthesis
+e) logs "hello" to console

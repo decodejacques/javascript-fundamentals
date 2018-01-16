@@ -7,5 +7,5 @@ function f() {
     console.log(x);
 }
 
-f();
-f();
+f(); //2
+f(); //4

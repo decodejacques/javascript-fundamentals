@@ -6,7 +6,16 @@ function c(g, h) {
 }
 
 function t() {
-    return c(function g(x) {return y + 1}, function h(y) {return x * 2});
+    return c(
+    function g(y) {
+        return y + 1
+    },
+    
+    function h(x) {
+        return x * 2
+    });
 }
+
+
 
 module.exports = t;

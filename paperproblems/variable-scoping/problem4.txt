@@ -10,8 +10,10 @@ function f() {
             function k() {
                 var b = "boom";
             }
-            // Which variables are in scope on this line?
+            // Which variables are in scope on this line? // x, f, y, g, z, h, p, k
+            console.log(x, f, y, g, z, h, p, k,);
         }
 
     }
 }
+

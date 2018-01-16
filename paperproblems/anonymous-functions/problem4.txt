@@ -11,3 +11,8 @@ function twice(f) {
 }
 
 twice(greet);
+
+(function (f) {
+    f("bob");
+    f("mary");
+}) (function (x) {console.log("hello " x);})

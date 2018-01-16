@@ -1,5 +1,7 @@
-Rewrite this program so that it doesn't have a single function definition
-In other words, replace all the function definitions with anonymous functions
+Rewrite this program so that it doesn 't have a single function definition
+In other words, replace all the
+
+function definitions with anonymous functions
 The final program should be on a single line
 
 
@@ -12,3 +14,8 @@ function call(f) {
 }
 
 call(greet);
+
+
+(function (f) {
+    f("bob");
+}) (function(x)  {console.log("hello " + x);})

@@ -16,4 +16,5 @@ Person.prototype.salary = Person.prototype.salary + 300;
 Person.__proto__.salary = Person.__proto__.salary + 400;
 bob.salary = bob.salary + 50;
 
-console.log(bob.salary);
+console.log(bob.salary); // 40450
+

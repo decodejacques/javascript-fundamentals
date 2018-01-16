@@ -6,3 +6,7 @@ function greet(x) {
 }
 
 greet(bob);
+
+(function(x) {
+    console.log("hello " + x);
+})(bob)

@@ -1,12 +1,27 @@
 Rewrite this program so that it does't use the new keyword.
 The program must be equivalent in every other way.
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.greet = function() {
+function Person(name, age) => {
+    _name = name;
+    _age = age;
+    _greet = () => {
         console.log("Hello my name is " + this.name);
     }
 }
 
-var bob = Person("Bob", 30);
+var bob =  Person;
+bob("Bob", 30)
+
+//function Person(fname, fage) {
+
+   return {
+        name = fname;
+    age = fage;
+    greet = () => {
+        console.log("Hello my name is " + this.name);
+    }
+    }
+}
+
+
+`

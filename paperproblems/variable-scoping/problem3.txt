@@ -9,6 +9,6 @@ function f() {
     console.log(x + y);
 }
 
-f();
-f();
-console.log(y);
+f(); // 7
+f(); // 9
+console.log(y); // 3
