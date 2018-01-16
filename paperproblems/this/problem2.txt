@@ -1,5 +1,22 @@
 What is the output of this program?
 
+*************************<ANSWER>*************************
+Undefined.
+
+With this syntax: the context of 'this' is that of the
+window object and not that of the object; because we're 
+actually calling function g(), and not the original 
+content of 'obj.bar').
+In order for this to work as intended, bar should have 
+been A) called as a function (()) from within the variable
+declaration (e.g.: var g = obj.bar()); and B) triggered by
+calling only g; and not g().
+
+    var g = obj.bar();
+    g;
+
+*************************</ANSWER>************************
+
 'use strict';
 
 var obj = {

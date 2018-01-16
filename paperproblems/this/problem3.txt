@@ -1,5 +1,15 @@
 What is the output of this program?
 
+********************<ANSWER>*********************
+12.
+However, it isn't the value of the baz property
+for obj (the one that's being pointed to via 
+obj2.bar); it's the value of baz from obj2.
+The pointer only changes the pointer of bar; but
+its parent context is still that of the object
+that calls it, which is obj2.
+********************</ANSWER>********************
+
 'use strict';
 
 var obj = {
