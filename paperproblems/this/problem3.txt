@@ -15,3 +15,4 @@ var obj2 = {
 obj2.bar = obj.bar;
 obj2.bar();
 
+ANSWER IS 12 - OBJ.BAR IS SAME AS OBJ2.BAR

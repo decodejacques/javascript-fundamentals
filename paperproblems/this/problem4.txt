@@ -12,3 +12,5 @@ function f(g) {
 }
 
 f(obj.bar);
+
+ANSWER IS UNDEFINED - CONTEXT CHANGED

@@ -10,3 +10,4 @@ var obj = {
 var g = obj.bar;
 g();
 
+UNDEFINED CONTEXT CHANGED - THIS = UNDEFINED

@@ -16,4 +16,7 @@ function soften(f) {
 
 var softAskOnADate = soften(askOnADate);
 console.log(softAskOnADate("Eric"));
-console.log(softAskOnADate("Bob"));
+console.log(softAskOnADate("Bob")); 
+
+Bob = I do
+Eric = Maybe

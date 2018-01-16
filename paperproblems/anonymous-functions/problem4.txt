@@ -11,3 +11,5 @@ function twice(f) {
 }
 
 twice(greet);
+
+twice(function(x){console.log("hello " + x);})

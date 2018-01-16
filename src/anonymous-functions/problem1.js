@@ -1,7 +1,10 @@
 // fix all the errors
-function c(g, h) {
-    var x = g(6);
-    var y = h(8);
+var y = 6;
+var x = 8;
+
+var c = function c(g, h) {
+    var x = g(y);
+    var y = h(x);
     return [x, y];
 }
 

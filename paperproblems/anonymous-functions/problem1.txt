@@ -5,4 +5,7 @@ function greet(x) {
     console.log("hello " + x);
 }
 
+var greet = function(x) {console.log("hello " + x);}
+var bob = "bob"
+
 greet(bob);
