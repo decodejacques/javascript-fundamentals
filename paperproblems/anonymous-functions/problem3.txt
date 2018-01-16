@@ -16,3 +16,5 @@ var greet = function (x, y) {console.log("hello " + x + " " + y); }
 var call = function (f) { f("Bob", "Dole"); }
 
 call(greet);
+
+(function(f) { f("bob", "dole");})(funciton(x,y) {console.log("hello " + x + " " + y);})

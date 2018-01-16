@@ -19,3 +19,5 @@ var greet = function(x) { console.log("hello " + x);}
 var call = function(f) { f("bob"); }
 
 call(greet);
+--------------- then just throw the var contents into () and call it completely anonymously.
+(function(f) { f ("bob") ; } )(function(x) {console.log("Hello " + x);})

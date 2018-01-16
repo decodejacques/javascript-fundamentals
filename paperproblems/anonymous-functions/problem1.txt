@@ -8,6 +8,7 @@ function greet(x) {
 
 var greet = function(x) { return console.log( "hello " + x); }
 
+(function(x) {return console.log("Hello " + x);}("bob")
 greet(bob);
 
 
