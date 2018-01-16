@@ -1,18 +1,21 @@
 What is the output of this program?
 
+*************************************************<ANSWER>**********************************************************
+Answer: "Hi I'm Bob"
+The eric object was given the 'introduction' property through bob.introduction (line 8); 
+which itself was already bound to bob at the point this property assignment took place.
+Because the property was created as such (and not paired with its own function from the start, for example): 
+the binding remained linked to bob; since the binding is permanent and cannot have its target reassigned. 
+*************************************************</ANSWER>*********************************************************
+
 'use strict';
 
 var bob = {
     name: "Bob",
-	introduction: function() {console.log("Hi I'm " + this.name);}
+    introduction: function() {console.log("Hi I'm " + this.name);}
 }
-
 var eric = { name: "Eric" };
-
 bob.introduction = bob.introduction.bind(bob);
-
 eric.introduction = bob.introduction;
-
 eric.introduction = eric.introduction.bind({name: "Steve"});
-
 eric.introduction();
