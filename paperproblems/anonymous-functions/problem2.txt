@@ -12,15 +12,3 @@ function call(f) {
 }
 
 call(greet);
-
-
-var greet = function(x) {
-    console.log("hello " + x);
-};
-
-var call = function(f) {
-    f("bob");
-};
-
-call(greet)
-

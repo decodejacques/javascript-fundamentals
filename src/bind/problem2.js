@@ -1,9 +1,9 @@
 // Fix all the errors in this program
 var dog = {breed: "schnitzel"};
-var greet = function() {
-    return "I'm a " + this.breed;
+function greet() {
+    return "I'm a " + this.bred;
 }
 
-greet = greet.bind(dog);
+greet.bind(dog);
 
 module.exports = greet;
