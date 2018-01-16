@@ -13,3 +13,5 @@ var bob = Person("Bob", 30);
 bob.name = bob.name + " Dole";
 
 bob.greet();
+
+//output: error because the var bob need to use the constructor to define all its properties : var bob = new Person("Bob", 30)

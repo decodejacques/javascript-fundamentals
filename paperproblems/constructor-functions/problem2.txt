@@ -13,3 +13,5 @@ var bob = new Person("Bob", 30);
 Person.prototype.leave = function() {return this.name + " is leaving";}
 
 bob.leave();
+
+//output "Bob is leaving" because the property leave is correctly added to the prototype of the function Person
