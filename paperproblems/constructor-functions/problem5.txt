@@ -9,4 +9,4 @@ function Person(name, age) {
     }
 }
 
-var bob = Person("Bob", 30);
+var bob = new Person("Bob", 30);
