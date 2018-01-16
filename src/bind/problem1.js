@@ -1,7 +1,7 @@
 var bob = {name: "Bob"};
-function greet() {
+var greet = function() {
     return "I'm " + this.name;
 }
 // bind greet to bob
-
+greet = greet.bind(bob);
 module.exports = greet;
