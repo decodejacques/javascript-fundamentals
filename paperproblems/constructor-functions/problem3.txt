@@ -10,10 +10,10 @@ function Person(name, age) {
 
 var bob = new Person("Bob", 30);
 
-bob.constructor.prototype.salary = 40000;
-bob.__proto__.salary = bob.__proto__.salary + 100;
-Person.prototype.salary = Person.prototype.salary + 300;
-Person.__proto__.salary = Person.__proto__.salary + 400;
-bob.salary = bob.salary + 50;
+bob.constructor.prototype.salary = 40000; 
+bob.__proto__.salary = bob.__proto__.salary + 100; // adds 100 to 40 000 = 40 100
+Person.prototype.salary = Person.prototype.salary + 300; // adds 300 to 40 100 = 40 400
+Person.__proto__.salary = Person.__proto__.salary + 400; // cannot __proto__ to a object so skips this
+bob.salary = bob.salary + 50; // adds 50 to 40 400
 
-console.log(bob.salary);
+console.log(bob.salary); // 40450

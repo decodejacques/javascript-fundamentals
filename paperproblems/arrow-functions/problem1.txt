@@ -2,18 +2,18 @@ For each of the following expressions:
  - Does it have a syntax error?
  - If it doesn't have a syntax error, what are the probable input and output types of the function?
 
-a) x => x + 1
+a) x => x + 1 // no syntax error -- inputs x and adds 1
 
-b) x, y => x * y
+b) x, y => x * y // x is not defined
 
-c) x => { x * 2 }
+c) x => { x * 2 } //no syntax error -- inputs x and multiplies by 2
 
-d) (x, z) => {console.log(z); return x * z}
+d) (x, z) => {console.log(z); return x * z} //no syntax error -- prints z and then returns z multiplied by x
 
-e) x => console.log(z); return x * z
+e) x => console.log(z); return x * z // return is outside of the function
 
-f) (x) => x * 2
+f) (x) => x * 2 // will return x multiplied by 2
 
-e) () => console.log("hello")
+e) () => console.log("hello") // prints out hello
 
 When you're done, check all your answers in the developer console.

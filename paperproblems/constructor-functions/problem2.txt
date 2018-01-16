@@ -13,3 +13,5 @@ var bob = new Person("Bob", 30);
 Person.prototype.leave = function() {return this.name + " is leaving";}
 
 bob.leave();
+
+//Bob is leaving
