@@ -1,8 +1,15 @@
 Rewrite this program so that it doesn't have a single function definition
 In other words, replace all the function definitions with anonymous functions
 
-function greet(x) {
+****************<ANSWER>******************
+
+const x = "Bob";
+
+function greet() {
     console.log("hello " + x);
 }
 
-greet(bob);
+greet();
+
+****************</ANSWER>*****************
+
