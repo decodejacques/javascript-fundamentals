@@ -2,12 +2,29 @@ Define a Rectangle class that extends the Shape class
 Then create an instance of the Rectangle class
 Then call the toString method on the new instance and print it out
 
+*************************************<ANSWER>*************************************
+
 class Shape {
     constructor(shapeName) {
         this.shapeName = shapeName;
     }
     toString() {
         return this.shapeName + " with area " +
-          this.area() + " and perimeter " + this.perimeter();
+        this.area() + " and perimeter " + this.perimeter();
     }
 }
+
+class Rectangle extends Shape {
+    constructor(width, height) {
+        super("Rectangle");
+        this.width = width,
+	this.height = height
+    }
+    area() { return this.width * this.height }
+    perimeter() { return (this.width + this.height) * 2 }
+}
+
+tangledWreck = new Rectangle(6, 4);
+console.log(tangledWreck.toString());
+
+*************************************</ANSWER>************************************

@@ -1,5 +1,18 @@
 What does the following problem output?
 
+*****************************************<ANSWER>*****************************************
+
+s.toString() returns...
+"square with area 25 and perimeter 20"
+...which is then logged by the wrapping console.log() (outputs the same as the return).
+
+Even though "area" and "perimeter" aren't inherent properties of the Shape class or its
+constructor, Shape can still call on "this.area()" and "this.perimeter()" successfully 
+because it has been extended by the Square class; so it's able to call on data from
+that subclass.
+
+*****************************************</ANSWER>****************************************
+
 class Shape {
     constructor(shapeName) {
         this.shapeName = shapeName;
