@@ -1,5 +1,13 @@
 What does the following program do?
 
+***************************************<ANSWER>***************************************
+
+It won't log anything before 2 seconds or so; but then it will log "Hello!" to the 
+console twice as much as it did in the previous second, until it is logged as often as
+the machine can possibly handle... which sounds like a very bad idea. :)
+
+***************************************</ANSWER>**************************************
+
 function g() {
     console.log("Hello!")
 }
