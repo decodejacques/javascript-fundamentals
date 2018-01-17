@@ -1,19 +1,37 @@
 For each of the following expressions:
- - Does it have a syntax error?
- - If it doesn't have a syntax error, what are the probable input and output types of the function?
+1) Does it have a syntax error?
+2) If it doesn't have a syntax error, what are the probable input and output types of the function?
 
 a) x => x + 1
+   1) No
+   2) Input: number; 
+      Output: returns a number (number not logged).
 
 b) x, y => x * y
+   1) Syntax error: 2 arguments not enclosed in parentheses.
+   2) N/A
 
 c) x => { x * 2 }
+   1) Syntax error: no return keyword after the first curly brace; so no value returned.
+   2) N/A
 
 d) (x, z) => {console.log(z); return x * z}
+   1) No
+   2) input: numbers
+      output: number (2nd argument) logged & number returned (both args operated on).
 
 e) x => console.log(z); return x * z
+   1) Syntax error: no z argument passed to arrow function (assuming z is not defined at a higher level).
+   2) N/A
 
 f) (x) => x * 2
+   1) No (although parentheses are not necessary for a single argument.)
+   2) input : number
+      output : returns a number (number not logged).
 
 e) () => console.log("hello")
+   1) No
+   2) input: undefined;
+      output: "hello" logged, but returns undefined.
 
 When you're done, check all your answers in the developer console.
