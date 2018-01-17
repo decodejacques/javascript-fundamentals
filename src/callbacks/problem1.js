@@ -4,4 +4,6 @@ function shout(x) {
     console.log(x.toUppercase());
 }
 
-SetTimeout(shout("hello"), 1);
+setTimeout(function() {
+    console.log("hello".toUpperCase())}, 1000);
+    

@@ -18,5 +18,5 @@ class Person {
 
 var bob = new Person(25, "Bob", 40000);
 
-bob.increaseSalary(-500);
+bob.increaseSalary(-500); //why though?
 console.log(bob.toString());

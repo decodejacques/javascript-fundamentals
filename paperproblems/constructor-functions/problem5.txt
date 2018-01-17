@@ -1,4 +1,4 @@
-Rewrite this program so that it does't use the new keyword.
+Rewrite this program so that it does 't use the new keyword.
 The program must be equivalent in every other way.
 
 function Person(name, age) => {
@@ -9,18 +9,18 @@ function Person(name, age) => {
     }
 }
 
-var bob =  Person;
+var bob = Person;
 bob("Bob", 30)
 
 //function Person(fname, fage) {
 
-   return {
-        name = fname;
-    age = fage;
-    greet = () => {
+return {
+    name: fname;
+    age: fage;
+    greet: function () {
         console.log("Hello my name is " + this.name);
     }
-    }
+}
 }
 
 

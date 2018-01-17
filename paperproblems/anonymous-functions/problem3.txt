@@ -16,4 +16,5 @@ call(greet);
 (function (f) {
     f("Bob", "Dole");
 })(function (x, y) {
-        console.log("hello " + x + " " + y));
+    console.log("hello " + x + " " + y);
+})

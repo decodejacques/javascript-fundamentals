@@ -9,3 +9,5 @@ function h() {
 }
 
 setInterval(h, 1000);
+
+//runs h every second parallel to the h before
