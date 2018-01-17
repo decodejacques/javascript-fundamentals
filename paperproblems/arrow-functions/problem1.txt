@@ -2,18 +2,18 @@ For each of the following expressions:
  - Does it have a syntax error?
  - If it doesn't have a syntax error, what are the probable input and output types of the function?
 
-a) x => x + 1
+a) x => x + 1 // good - x would be a number in and out
 
-b) x, y => x * y
+b) x, y => x * y // bad 2 params so (x, y) => x* y, again number in and out for types given the *
 
-c) x => { x * 2 }
+c) x => { x * 2 } // seems fine, number in and out, don't need the {} though, could be x => x *2
 
-d) (x, z) => {console.log(z); return x * z}
+d) (x, z) => {console.log(z); return x * z} // no problem, I would assume input and out put of numbers since console log z could be a string but the x * z would throw an error since you can't multiple strings.
 
-e) x => console.log(z); return x * z
+e) x => console.log(z); return x * z // function needs {} since it's a statement, so x => {console.log(z); return x * z;} - gonna assume numbers again becase fo the *
 
-f) (x) => x * 2
+f) (x) => x * 2 // don't need the () since only one param. x => x * 2 , number types again
 
-e) () => console.log("hello")
+e) () => console.log("hello") // anonymous nothing in and nothing returned (so implicit undefined)
 
 When you're done, check all your answers in the developer console.
