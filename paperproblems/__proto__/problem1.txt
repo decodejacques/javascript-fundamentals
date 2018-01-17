@@ -1,10 +1,31 @@
-Draw the object diagram for this program
+﻿Draw the object diagram for this program
 
 var x1 = {};
 var x2 = {};
 var x3 = {};
 var x4 = {};
-x2.__proto__ = x1;
-x3.__proto__ = x2;
-x4.__proto__ = x3;
+x2.__proto__ = x1; // Impossible, would result in type error (cannot overwrite proto as a whole)
+x3.__proto__ = x2; // Impossible, would result in type error (cannot overwrite proto as a whole)
+x4.__proto__ = x3; // Impossible, would result in type error (cannot overwrite proto as a whole)
 
+****************************************< ANSWER >**********************************************
+
+   ╔════╤═══╗
+   ║    │   ║ ┌────┬───┐
+   ║ x1 │ ■───┤ {} │ ■────┐
+   ║    │   ║ └────┴───┘  │
+   ╟────┼───╢             │
+   ║    │   ║ ┌────┬───┐  │
+   ║ x2 │ ■───┤ {} │ ■────┤
+   ║    │   ║ └────┴───┘  │  ┌───────────┬─────┐
+   ╟────┼───╢             ├─►│ __proto__ │ ... │
+   ║    │   ║ ┌────┬───┐  │  └───────────┴─────┘
+   ║ x3 │ ■───┤ {} │ ■────┤
+   ║    │   ║ └────┴───┘  │
+   ╟────┼───╢             │
+   ║    │   ║ ┌────┬───┐  │
+   ║ x4 │ ■───┤ {} │ ■────┘
+   ║    │   ║ └────┴───┘
+   ╚════╧═══╝
+
+***************************************</ ANSWER >**********************************************

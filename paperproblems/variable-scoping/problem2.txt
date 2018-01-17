@@ -1,5 +1,21 @@
 What is the output of this program?
 
+**********<ANSWER>**********
+first call of f():    2
+        (Returns: undefined)
+
+second call of f():   2
+        (Returns: undefined)
+
+Why?
+Variable x is not a closure
+of function f; it is
+declared every time the
+function runs and therefore,
+the result is the same at
+every call.
+**********</ANSWER>*********
+
 function f() {
     var x = 1;
     x = x * 2;

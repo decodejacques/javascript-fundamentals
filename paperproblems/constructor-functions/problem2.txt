@@ -1,5 +1,14 @@
 What does this program output?
 
+**************************************<ANSWER>*********************************************
+
+It should output "Bob is leaving", because bob was built on the Person prototype and the
+Person prototype was updated to contain the new key "leave"; which is a function (much
+like "greet") that has been called at the very last line of the program.
+In that context, "this" refers to the calling object "bob"; so all works as intended here.
+
+**************************************</ANSWER>********************************************
+
 function Person(name, age) {
     this.name = name;
     this.age = age;

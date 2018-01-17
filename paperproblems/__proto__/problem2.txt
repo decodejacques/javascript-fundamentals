@@ -4,9 +4,11 @@ var x1 = {};
 var x2 = {};
 var x3 = {};
 var x4 = {};
-x2.__proto__ = x1;
-x3.__proto__ = x2;
-x4.__proto__ = x3;
+x2.__proto__ = x1; // Impossible, would result in type error (cannot overwrite proto as a whole)
+x3.__proto__ = x2; // Impossible, would result in type error (cannot overwrite proto as a whole)
+x4.__proto__ = x3; // Impossible, would result in type error (cannot overwrite proto as a whole)
+
+// Therefore...
 
 x1.age = 20;
 x3.age = 18;
@@ -15,3 +17,15 @@ console.log(x1.age);
 console.log(x2.age);
 console.log(x3.age);
 console.log(x4.age);
+
+*************************************************< ANSWER >***************************************************
+
+Technically, if you didn't remove the last three lines modifying __proto__ : you would get a type error.
+...Once that was cleaned up; this is what we'd get:
+
+1st console.log:    20
+2nd console.log:    18 // None defined in object; last assigned key-value pair 'age' for __proto__ takes over.
+3rd console.log:    18
+4th console.log:    18 // None defined in object; last assigned key-value pair 'age' for __proto__ takes over.
+
+*************************************************</ ANSWER >**************************************************

@@ -1,5 +1,11 @@
 What is the output of this program? Don't cheat by running it!
 
+**********************************<ANSWER>***********************************
+"maybe" --- Softening applied for Eric (r !== "I do!")
+"I do!" --- No softening is applied for Bob (r === "I do!")
+ret is never actually used anywhere and could be removed altogether.
+**********************************</ANSWER>**********************************
+
 function askOnADate(n) {
     if(n === "Bob") return "I do!";
     else return "Absolutely not!";

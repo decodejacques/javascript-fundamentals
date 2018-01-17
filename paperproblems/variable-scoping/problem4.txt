@@ -1,5 +1,10 @@
 Which variables are in scope on the indicated line?
 
+***************************<ANSWER>***************************
+variables x, f, y, g, z, h, p and k are in scope (accessible).
+variable b is not in scope (not accessible).
+***************************</ANSWER>**************************
+
 var x = 5;
 function f() {
     var y = 8;
@@ -12,6 +17,5 @@ function f() {
             }
             // Which variables are in scope on this line?
         }
-
     }
 }

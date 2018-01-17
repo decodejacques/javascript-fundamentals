@@ -1,5 +1,19 @@
 What is the output of this program?
 
+**********<ANSWER>**********
+first call of f():    2
+        (Returns: undefined)
+
+second call of f():   4
+        (Returns: undefined)
+
+Why? 
+Variable x is a closure
+of function f. (Declared in
+global scope; therefore
+increments at every call.)
+**********</ANSWER>*********
+
 var x = 1;
 
 function f() {

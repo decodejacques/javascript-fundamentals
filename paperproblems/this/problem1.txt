@@ -1,5 +1,12 @@
 What is the output of this program?
 
+*********<ANSWER>**********
+8
+In this context, baz refers
+to a property (.) of this;
+and not the window object.
+*********</ANSWER>*********
+
 'use strict';
 
 function foo() {

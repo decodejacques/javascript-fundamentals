@@ -1,5 +1,14 @@
 What is the output of this program?
 
+***********************<ANSWER>************************
+It's an error.
+The context of "this" is that of a function (g(4)) and
+not that of an object. In strict mode; it's impossible
+to add the value of i (a number) to something that
+returns undefined (since it isn't an object that's in
+context here).
+***********************</ANSWER>***********************
+
 'use strict';
 
 var obj = {

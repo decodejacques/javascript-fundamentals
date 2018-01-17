@@ -1,5 +1,11 @@
 What is the output of this program?
 
+******************************************************<ANSWER>***************************************************************
+Answer: 4
+However: this does not imply that it overwrote the 'baz' property of the original declared object.
+Rather: a new object was created; and the 'bar' property of the original object pointed to the new object's value for 'baz'.
+******************************************************</ANSWER>**************************************************************
+
 'use strict';
 
 var obj = {

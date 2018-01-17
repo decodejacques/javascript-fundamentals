@@ -1,5 +1,21 @@
 What does the following program do?
 
+***************************************<ANSWER>***************************************
+
+#1) It will first evaluate the "last" setTimeout; then function h, then function f, and
+finally function g (which, in itself, is a process that takes up a little time.)
+
+#2) Once the evaluation is complete: the "countdown" will actually start.
+It will run the "last" setTimeout and wait 0.2 seconds before executing function h.
+In turn, the setTimeout of h will then wait 1 second before executing function f.
+In turn, the setTimeout of f will then wait 0.5 second before executing function g.
+Only at that point will the console log "Hello!"
+
+So, the absolute minimum amount of time this would take is 1.7 seconds; but it likely
+will take a little more time due to the evaluation process (#1).
+
+***************************************</ANSWER>**************************************
+
 function g() {
     console.log("Hello!")
 }
