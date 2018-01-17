@@ -1,5 +1,14 @@
 What is the output of this program?
 
+**************************************<ANSWER>**************************************
+
+bob.increaseSalary: logs "Yay!" // Even though we're actually reducing his salary.
+
+bob.toString: returns "My name is Bob and I'm 25 and I make 39500", which is -then- 
+logged by the wrapping 'console.log()'.
+
+**************************************</ANSWER>*************************************
+
 class Person {
     constructor(age, name, salary) {
         this.age = age;

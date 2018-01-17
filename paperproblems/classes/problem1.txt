@@ -1,5 +1,29 @@
 Draw the object diagram for the following program.
 
+***********************************<TEXT-ANSWER>***************************************
+
+1) In the 'Global Variables' box: 
+   - Dog (class)
+   - someDog (object)
+
+2) Dog points to a class. 
+   Class contains:
+   - prototype (own; used for receiving the link from someDog.__proto__)
+   - bark: Link to a function (A).
+   - __proto__: Link to Global (Empty) Object.
+
+3) someDog points to a dog object containing the following properties:
+   > breed: "schnitzel"
+   > age: 2
+   > gender: "male"
+   > __proto__: Link to Dog.prototype
+
+4) Function (A/'bark').
+   Contains:
+   - __proto__: Link to Global (Empty) Object.
+
+***********************************</TEXT-ANSWER>**************************************
+
 class Dog {
     constructor(breed, age, gender) {
         this.breed = breed;
