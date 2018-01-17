@@ -1,8 +1,7 @@
 // Fix all the errors. It should print hello after 1 second
 
 function shoutLoudly(x) {
-    x = x.toUpperCase();
-    console.log(x)
+    console.log(x.toUpperCase())
 }
 
 function shout() {
