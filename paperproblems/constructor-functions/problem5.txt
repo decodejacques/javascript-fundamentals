@@ -8,14 +8,17 @@ var bob = Person("Bob", 30);
 // console.log(bob.gender) === "Male"; so the __proto__ works as expected.
 *******************************************</ANSWER>********************************************
 
+var personPrototype = {}
 function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.greet = () => {
+    var ret = {
+    "name": name,
+    "age": age,
+    greet: () => {
         console.log("Hello my name is " + this.name);
+        }
     }
+    ret.__proto__ = Person.prototype;
+    return ret;
 }
 
 var bob = Person("Bob", 30);
-
-console.log(bob);
