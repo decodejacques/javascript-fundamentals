@@ -1,12 +1,21 @@
 Rewrite this program so that it does't use the new keyword.
 The program must be equivalent in every other way.
 
+*******************************************<ANSWER>*********************************************
+function Person(name, age) { return {"name": name, "age": age, "__proto__": Person.prototype } }
+var bob = Person("Bob", 30);
+// Person.gender = "Male";
+// console.log(bob.gender) === "Male"; so the __proto__ works as expected.
+*******************************************</ANSWER>********************************************
+
 function Person(name, age) {
     this.name = name;
     this.age = age;
-    this.greet = function() {
+    this.greet = () => {
         console.log("Hello my name is " + this.name);
     }
 }
 
 var bob = Person("Bob", 30);
+
+console.log(bob);

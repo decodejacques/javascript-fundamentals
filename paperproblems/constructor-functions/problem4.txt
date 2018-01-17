@@ -1,5 +1,17 @@
 What does this program output?
 
+**************************************<ANSWER>**********************************************
+This results in an error, because variable "bob" actually references the Person function
+and not a new instantiation of Person (a new "Person" object for "Bob").
+
+We can't add a string to a function; so this results in a type error.
+
+We could fix this program by adding the keyword "new" between "=" and "Person":
+var bob = new Person("Bob", 30);
+
+This would give us a properly instantiated 'Person' object to access/modify as we please.
+**************************************</ANSWER>*********************************************
+
 function Person(name, age) {
     this.name = name;
     this.age = age;

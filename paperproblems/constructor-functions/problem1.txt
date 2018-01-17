@@ -1,4 +1,25 @@
 Draw the object diagram for the following program. 
+
+***************************************<TEXT-ANSWER>***************************************
+
+Variables in 'Global' box:
+	1> Person
+	2> bob
+       (3> __proto__)
+
+1> Link from Person pointing to a function with a prototype [A]. (Constructor function)
+
+2> Link from Bob pointing to an object with the following properties:
+   - name: "Bob"
+   - age: 30
+   - greet: Link from greet to a function with a prototype [B]. (Greeting Message)
+   - constructor: Link from constructor to function labeled [A] above.
+   - __proto__: Link from __proto__ to function labeled [A] above.
+
+(3> Link from __proto__ to Object.prototype [C]. [Global Object Prototype])
+
+***************************************</TEXT-ANSWER>**************************************
+
 Hints: 
   - There are two variables: makePerson and bob
   - makePerson has a property called prototype

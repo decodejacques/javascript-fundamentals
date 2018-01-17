@@ -1,5 +1,86 @@
 What does this program output?
 
+**************************************<ANSWER>*********************************************
+
+It should output 40450.
+
+The key point here is that "prototype" should be used to access/create/modify an object's 
+own prototypal properties; whereas "__proto__" should be used in the context of an 
+instantiated object (e.g.: in this case, the "bob" object [sic]) to access its parent's
+properties.
+
+In other words: "__proto__" refers to prototype properties found "one level up" (those of 
+the parent), and "prototype", to an object's own level/properties.
+
+This would allow us to infer the following:
+
+A) bob.constructor.prototype.salary = 40000 // This operation works because we're calling
+                                               "prototype" on bob's "Person" constructor; 
+					       so this syntax is valid, and the property is
+                                               created in the constructor's prototype.
+                                               It's a more "convoluted" way of writing
+					       "Person.prototype.salary = ..." or 
+					       "bob.__proto__.salary"; only, we're using
+					       an instantiated Person object to set a new
+					       property to its constructor.
+                                               And because bob's an instantiated object
+                                               of Person, that property is accessible to
+					       him as well (though not as one of *his* own
+					       object properties.)
+
+B) bob.__proto__.salary = bob.__proto__.salary + 100 // Here, this operation also works on
+							bob's prototype (ergo: the Person 
+							constructor); but because we are
+							updating that property through the
+							instantiated "bob" opbject; we had
+							to use __proto__ (not "prototype").
+							We are therefore now at 40100 for
+							the Person prototype's salary...
+							and bob's!
+
+C) Person.prototype.salary = Person.prototype.salary + 300 // Same result as the above,
+							      except that we are updating
+							      the Person prototype's
+							      "salary" property through
+							      the Person constructor;
+							      we therefore had to use the
+							      keyword "prototype" here
+							      (not __proto__), since we're
+							      not doing so through an
+							      instantiated Person object.
+
+D) Person.__proto__.salary = Person.__proto__.salary + 400 // This does NOTHING USEFUL in
+							      *this* particular context. 
+                                                              there's no existing "salary"
+							      property for the __proto__ of
+							      Person (which is in fact an 
+							      instantiation of the "global
+							      Object"), so this operation 
+							      does not return a number 
+							      (undefined + 400 = NaN), and
+                                                              especially does NOT update
+							      the appropriate (existing)
+							      property value we've been
+							      modifying thus far (in
+							      Person's *own* prototype).
+							      The value of the Person
+							      prototype's salary is still,
+							      therefore, 40400 (not 40800).
+
+E) bob.salary = bob.salary + 50 // Here, we're in fact doing two things:
+				   1. The left-hand part of this operation sets a "salary" 
+				      property to bob's own properties (since it must be
+				      noted that bob was getting this property from its
+				      constructor's prototype all along);
+				   2. The right-hand side of the operation actually
+				      assigns, to property "bob.salary", the value of the
+				      Person prototype's current "salary" value, + 50.
+				      the value of "bob.salary" is therefore no longer a 
+				      pointer, but a primitive type: the number 40450.
+
+**************************************</ANSWER>********************************************
+
+
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -10,10 +91,10 @@ function Person(name, age) {
 
 var bob = new Person("Bob", 30);
 
-bob.constructor.prototype.salary = 40000;
-bob.__proto__.salary = bob.__proto__.salary + 100;
-Person.prototype.salary = Person.prototype.salary + 300;
-Person.__proto__.salary = Person.__proto__.salary + 400;
-bob.salary = bob.salary + 50;
+bob.constructor.prototype.salary = 40000; // The constructor being function "Person"...
+bob.__proto__.salary = bob.__proto__.salary + 100; // Now 40100 -- both for Bob and the Person prototype
+Person.prototype.salary = Person.prototype.salary + 300; // Now 40400 -- both for Bob and the Person prototype
+Person.__proto__.salary = Person.__proto__.salary + 400; // Still 40400 -- both for Bob and the Person prototype
+bob.salary = bob.salary + 50; // Now 40450 for Bob, through his own new salary property, and 40400 for the Person prototype.
 
 console.log(bob.salary);
