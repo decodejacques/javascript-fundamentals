@@ -1,5 +1,32 @@
 What is the output of this program?
 
+*************************<ANSWER>*************************
+first call of f():    7
+        (Returns: undefined)
+
+second call of f():   9
+        (Returns: undefined)
+
+final console.log():  3
+
+Why?
+
+@ first call: global y is shadowed by local y because
+y is re-declared locally. The global x is still being
+accessed and modified, though. 
+x is now 2 across the board; making x (2) + y (5) === 7.
+
+@ second call: global y is shadowed by local y because
+y is re-declared locally. The global x (which changed
+from 1 to 2 by the previous call of function f) is still
+being accessed and modified, though.
+x is now 4 across the board; making x (4) + y (5) === 9.
+
+@console.log(): The program cannot access the value of y
+within the function; hence, it will return the value of
+the 'global' y, which is still 3.
+*************************</ANSWER>************************
+
 var x = 1;
 var y = 3;
 
