@@ -2,21 +2,21 @@
 
 class Shape {
     constructor(shapeName) {
-        this.shapName = shapeName;
+        this.shapeName = shapeName;
     }
     toString() {
         return this.shapeName + " with area " +
-          this.area() + " and perimeter " + this.permeter();
+          this.area() + " and perimeter " + this.perimeter();
     }
 }
 
-class Square {
+class Square extends Shape {
     constructor(size) {
-        supr("square");
+        super("square");
         this.size = size;
     }
     area() {
-        return this.size * this.siz;
+        return this.size * this.size;
     }
     perimeter() {
        return this.size * 4;
