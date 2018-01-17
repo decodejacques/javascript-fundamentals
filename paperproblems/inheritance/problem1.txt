@@ -24,4 +24,4 @@ class Square extends Shape {
 }
 
 var s = new Square(5);
-console.log(s.toString());
+console.log(s.toString()); //square with area 25 and perimeter 20

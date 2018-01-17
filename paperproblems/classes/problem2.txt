@@ -18,5 +18,5 @@ class Person {
 
 var bob = new Person(25, "Bob", 40000);
 
-bob.increaseSalary(-500);
-console.log(bob.toString());
+bob.increaseSalary(-500); // Yay!
+console.log(bob.toString());// My name is Bob and im 25 and i make 39500

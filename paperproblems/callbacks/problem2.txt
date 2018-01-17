@@ -9,3 +9,5 @@ function h() {
 }
 
 setInterval(h, 1000);
+
+//print hello every 2 seconds infinitely
