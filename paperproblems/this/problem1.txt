@@ -9,3 +9,7 @@ function foo() {
 var obj = {bar: foo, baz: 8};
 obj.bar();
 
+----------------
+
+would return 8, since obj is before the . so it's called from obj and baz has a value of 8. BUt only because foo is a function, so it runs it and prints baz.
+

@@ -16,3 +16,9 @@ eric.introduction = bob.introduction;
 eric.introduction = eric.introduction.bind({name: "Steve"});
 
 eric.introduction();
+
+
+----- 
+first guess was Steve, I was wrong.
+
+bob.intro is set to bob.intro.bind(bob), then eric is set to bob.intro so it gets bound then and the steve binding fails

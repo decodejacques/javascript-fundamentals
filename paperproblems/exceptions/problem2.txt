@@ -1,4 +1,4 @@
-What does the following print out?
+What does the following print out? - g leads to h leads to f, throws 500 error which is caught by the function h try, console logs 500 throws its own error since functino h has also failed, function g the catches some error and console logs it giving 500 some error.
 
 function f() {
     throw 500;

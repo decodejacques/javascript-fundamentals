@@ -1,7 +1,16 @@
+/* My answers 
+
+It has 2 parameters the first is a variable that is assigned an array the second is the function to be performed on it, so array, function (shocking since this is the HOF question).
+
+what does it do, it loops though each item of the array and if isOdd returns all of the Odd characters and isEven will return all of the even numbers
+
+*/
+
 Someone has given you a function called filter
 You don't know what it does, but there are clues at the bottom of this file
 Use these clues to describe what filter is.
 Specifically:
+
  - How many parameters does it have
  - What are the types of the parameters
  - What does it do?

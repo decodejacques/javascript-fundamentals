@@ -13,3 +13,12 @@ function h() {
 }
 
 setTimeout(h, 200);
+
+
+-----------------------
+wtf :) callback inception
+first guess:
+setTimeout Calls h, which calls setTimeout which calls f which calls set Timeout, which calls g which console logs "hello" (right away) returns undefined in a cascading flow of failure all the way back to the start
+next guess after running it:
+...and realising that h was not h() so passed the funciton and not the result meaning that h waits 200 ms before f waits 1000 ms before g waits 500 ms before printing "Hello!"
+

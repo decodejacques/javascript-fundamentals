@@ -9,3 +9,11 @@ function h() {
 }
 
 setInterval(h, 1000);
+
+--------------
+before running it:
+repeatedly print hello every 2 seconds?
+
+after running it:
+realising that h will repeat every second and call g to ALSO repeat every second which 
+it will continuously spawn more interval loops. So by the 60th second we will have ~ 60 intervals looping around printing hello. that was fun.

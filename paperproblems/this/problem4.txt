@@ -12,3 +12,9 @@ function f(g) {
 }
 
 f(obj.bar);
+
+-----------
+
+pass obj.bar into f, which tells us to console.log obj.bar(4), which tells us to function (4) (console.log(this.baz + 4), 12+4 is 16, so hopefully this gives me 16...
+
+which of fucking course it doesn't.... which is because it is called from function(i)... which has no . in front of it so the rule says window/error :(

@@ -1,3 +1,9 @@
+/*
+
+map has two parameters you pass it an array and a function to perform on the array, if you pass it a numbers array and either double or triple it will do math, if you pass it the strings array with up or down it will turn all of the letters to upper or lower case.
+
+*/
+
 Someone has given you a function called map
 You don't know what it does, but there are clues at the bottom of this file
 Use these clues to describe what map is.
