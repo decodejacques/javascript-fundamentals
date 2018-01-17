@@ -6,9 +6,10 @@ function c(g, h) {
 }
 
 function t() {
-    return c( x => return y + 2, (x,y) => return x + y);
+    return c(g = (z) => z + 2, 
+             h = (x,y) => x + y);
 }
 
+console.log(t()); // Test file isn't testing anything; but the output is [8, 18], as expected.
+
 module.exports = t
-
-
