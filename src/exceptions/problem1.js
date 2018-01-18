@@ -5,11 +5,11 @@ function first(arr) {
             throw new Error("empty array");
         } else return arr[0]
     }
-    try {
-        first([1,2]) 
-    } catch(err) {
-        console.log(err)
-    }
+try {
+    first([1,2]) 
+} catch(err) {
+    console.log(err)
+}
     // Throw an exception if the array has no elements
     // Otherwise return the first element
 
