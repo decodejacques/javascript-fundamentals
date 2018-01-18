@@ -1,3 +1,20 @@
+**************************<...ANSWER-TO-A-NONEXISTENT-QUESTION...>**************************
+
+"Nacho,Ramses,Flufftail,Popcorn,Neckbeard"
+
+When the join function isn't being passed a delimiter, it simply joins the elements of its
+array with commas (no spaces after the commas).
+
+If the join function had been called with an empty string literal as its argument ('');
+the name of all animals would have "chained" into a long string.
+("NachoRamsesFlufftailPopcordNeckbeard")
+
+If the join function had been called with an space as its argument (' ');
+the name of all animals would have "chained" into a long string with a space between 
+each name. ("Nacho Ramses Flufftail Popcord Neckbeard"
+
+**************************</...ANSWER-TO-A-NONEXISTENT-QUESTION...>*************************
+
 var animals = [
     {species: 'dog', name: 'Nacho'},
     {species: 'cat', name: 'Ramses'},

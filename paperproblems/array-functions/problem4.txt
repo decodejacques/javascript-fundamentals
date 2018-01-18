@@ -1,3 +1,13 @@
+**************************<...ANSWER-TO-A-NONEXISTENT-QUESTION...>**************************
+
+true: Because *some* (read: "at least one") elements of the array are a dog;
+false: Because *not all* elements of the array are a dog.
+
+If we had run the .every(isDog) function on the filtered 'dogs' array created in problem #1,
+it would have returned true.
+
+**************************</...ANSWER-TO-A-NONEXISTENT-QUESTION...>*************************
+
 var animals = [
     {species: 'dog', name: 'Nacho'},
     {species: 'cat', name: 'Ramses'},

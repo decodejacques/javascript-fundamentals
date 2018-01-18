@@ -1,5 +1,17 @@
 What is the output of this program?
 
+*************************************<ANSWER>*************************************
+
+"Nacho".
+Because 'underneath', the filter function generates the new filtered array by
+passing through each element of the original array.
+The very first element that would return a value of true on the evaluation
+expression is "Nacho"; hence, the name property of letterN at index position 0
+is "Nacho".
+
+*************************************</ANSWER>************************************
+
+
 var animals = [
     {species: 'dog', name: 'Nacho'},
     {species: 'cat', name: 'Ramses'},

@@ -1,5 +1,22 @@
 What is the output of this program?
 
+***************************<ANSWER>***************************
+
+It will return 2.
+
+The animal array's filter function will look for animals
+whoses value of species corresponds to the value of 'dog';
+since filter returns only items where the evaluation 
+expression returns true.
+
+The filter function *does* return a new array; so it *can*
+be assigned to variable 'dogs'.
+
+dogs will contain an array containing 2 objects with 'dog' as
+value of key 'species'.
+
+***************************</ANSWER>**************************
+
 var animals = [
     {species: 'dog', name: 'Nacho'},
     {species: 'cat', name: 'Ramses'},
