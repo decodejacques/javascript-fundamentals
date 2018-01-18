@@ -4,4 +4,4 @@ function shout(x) {
     console.log(x.toLowerCase());
 }
 
-setTimeout(function() {shout("hello")}, 1000);
+setTimeout(shout, 1000, "hello");
