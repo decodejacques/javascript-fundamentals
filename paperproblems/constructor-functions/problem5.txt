@@ -1,12 +1,32 @@
 Rewrite this program so that it does't use the new keyword.
 The program must be equivalent in every other way.
 
+var newPerson = {};
+
 function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.greet = function() {
+    var ret = {}
+    ret.name = name;
+    ret.age = age;
+    ret.greet = function() {
         console.log("Hello my name is " + this.name);
     }
+
+    return ret;
 }
 
-var bob = Person("Bob", 30);
+var bob = newPerson("Bob", 30);
+
+var newPerson = {};
+
+function Person(name, age) {
+    var ret = {
+    name : name;
+    age :  age;
+    greet : function() {
+        console.log("Hello my name is " + this.name);
+    }
+    ret.__proto__ = Person.prototype;
+    return ret;
+}
+
+var bob = newPerson("Bob", 30);

@@ -12,4 +12,4 @@ function h() {
     setTimeout(f, 1000);
 }
 
-setTimeout(h, 200);
+setTimeout(h, 2000);

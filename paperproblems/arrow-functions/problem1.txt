@@ -3,17 +3,31 @@ For each of the following expressions:
  - If it doesn't have a syntax error, what are the probable input and output types of the function?
 
 a) x => x + 1
+yes. typo. returns x +1
+x => x + 1
 
 b) x, y => x * y
 
+(x,y) => x * y (returns x * y)
+
 c) x => { x * 2 }
+
+x => x * 2 (returns x * 2 )
 
 d) (x, z) => {console.log(z); return x * z}
 
+(x, z) => {console.log(z); return x * z}
+
 e) x => console.log(z); return x * z
+
+x => {console.log(z); return x * z}
 
 f) (x) => x * 2
 
+None
+
 e) () => console.log("hello")
+
+
 
 When you're done, check all your answers in the developer console.

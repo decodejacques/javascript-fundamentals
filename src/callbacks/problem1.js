@@ -1,7 +1,7 @@
 // Fix all the errors. It should print hello after 1 second
 
-function shout(x) {
-    console.log(x.toUppercase());
+function shout() {
+    console.log("hello");
 }
 
-SetTimeout(shout("hello"), 1);
+setTimeout(shout, 1000);

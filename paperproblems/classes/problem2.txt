@@ -1,18 +1,24 @@
 What is the output of this program?
 
 class Person {
+
     constructor(age, name, salary) {
         this.age = age;
         this.name = name;
         this.salary = salary;
+
     }
     increaseSalary(amount) {
+
         console.log("Yay!");
         this.salary = this.salary + amount;
+
     }
     toString() {
+
         return "My name is " + this.name +
           "and I'm " + this.age + " and I make " + this.salary;
+          
     }
 }
 

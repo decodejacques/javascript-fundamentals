@@ -12,3 +12,4 @@ class Dog {
 }
 
 var someDog = new Dog("schnitzel", 2, "male");
+done

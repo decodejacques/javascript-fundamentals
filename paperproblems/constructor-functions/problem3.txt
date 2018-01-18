@@ -17,3 +17,8 @@ Person.__proto__.salary = Person.__proto__.salary + 400;
 bob.salary = bob.salary + 50;
 
 console.log(bob.salary);
+
+Functions do not have a __proto__
+Bob has a proto.
+
+40 450

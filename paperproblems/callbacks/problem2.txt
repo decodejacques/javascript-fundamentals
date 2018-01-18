@@ -4,8 +4,12 @@ function g() {
     console.log("Hello!")
 }
 
-function h() {
-    setInterval(g, 1000);
+function f() {
+    setTimeout(g, 500);
 }
 
-setInterval(h, 1000);
+function h() {
+    setTimeout(f, 1000);
+}
+
+setTimeout(h, 2000);
