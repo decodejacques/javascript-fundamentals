@@ -4,4 +4,4 @@ function f(x) {
     return x < 5 ? 3 : x > 8 ? 4 : x == 6 ? 12 : 9;
 }
 
-console.log(f(5));
+console.log(f(5)); // 9

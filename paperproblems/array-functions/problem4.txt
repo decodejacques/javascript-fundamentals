@@ -11,8 +11,8 @@ function isDog(animal) {
     return animal.species === 'dog';
 }
 
-animals.some(isDog)
-animals.every(isDog)
+animals.some(isDog) // true
+animals.every(isDog) //false
 
 
 

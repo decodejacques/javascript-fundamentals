@@ -2,11 +2,19 @@
 // Replace them with if statements
 
 function iLike(x) {
-    return x == 'chinese food' ? true : false;
+    if(x == 'chinese food') {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function iLikeLessPicky(x) {
-    return x == 'chinese food' ? true : x == 'french food' ? true : false;
+    if(x == 'chinese food' || x == 'french food') {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 module.exports = {iLike, iLikeLessPicky};

@@ -13,4 +13,4 @@ var letterN = animals.filter(function(animal) {
     return animal.name !== undefined && animal.name[0] === 'N'
 });
 
-console.log(letterN[0].name);
+console.log(letterN[0].name); // Nacho

@@ -13,4 +13,4 @@ var dogs = animals.filter(
                 function(animal)
                      {return animal.species === 'dog';});
 
-console.log(dogs.length);
+console.log(dogs.length); // 2
