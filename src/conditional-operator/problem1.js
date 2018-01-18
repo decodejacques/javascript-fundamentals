@@ -1,15 +1,11 @@
-
-
-
 function desirability(x) {
-   var y = x == 'Brad Pitt' ? "very desirable" : "not so desirable";
-   return y;
+   return x == 'Brad Pitt' ? "very desirable" : "not so desirable";
 }
 
 
 function broadenHorizon(x) {
-    var y = x == 'Brad Pitt'? "very desirable" : x == 'Angelina Jolie'? "also desirable" : "not desirable";
-    return y;
+    return x == 'Brad Pitt'? "very desirable" : x == 'Angelina Jolie'? "also desirable" : "not desirable";
+
 }
 
 module.exports = {desirability, broadenHorizon}
