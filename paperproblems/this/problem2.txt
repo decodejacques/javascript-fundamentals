@@ -10,3 +10,7 @@ var obj = {
 var g = obj.bar;
 g();
 
+-------------
+
+so this has no . before g, so is window context so hould return undefined window
+

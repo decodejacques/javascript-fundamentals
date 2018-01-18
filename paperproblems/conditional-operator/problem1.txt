@@ -5,3 +5,8 @@ function f(x) {
 }
 
 console.log(f(5));
+
+
+--------------------
+
+soooo... x is 5, so if x is smaller than 5 (it's not) so onto the false, is x > 8, it's not, so onto the false, is x ==6, nope. so we console log 9.

@@ -14,3 +14,9 @@ var dogs = animals.filter(
                      {return animal.species === 'dog';});
 
 console.log(dogs.length);
+
+----------------------------
+
+whoa...
+
+ok so, using an anonymous function to filter based on animal species being dog, and adding to the dogs var (seeing as filter is an array function I guess it figures out it's an array). there are two objects within animals array that have dog s a species, so I guess it would return 2

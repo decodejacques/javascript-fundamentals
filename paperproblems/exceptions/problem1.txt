@@ -1,4 +1,4 @@
-What does the following print out?
+What does the following print out? - 500. g() try's to run f, f is an empty function and falis throwing 500, g catches the err and then console logs it.
 
 function f() {
     throw 500;

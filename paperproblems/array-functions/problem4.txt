@@ -15,4 +15,12 @@ animals.some(isDog)
 animals.every(isDog)
 
 
+------------------
+
+well we didn't cover some or every in class so as a complete guess.. (nah.. googled it). SO some is if anything in the array returns true, every requires everythign in the array 
+to return tre for it to be true ( so kinda like an or/and). So there's nothing in the program to print anythign so I wouldn't get much, but some would return true and every would 
+return false.
+
+This would be very useful for the compare arrays for uniques problem :)
+
 

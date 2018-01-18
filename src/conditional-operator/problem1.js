@@ -1,23 +1,13 @@
-//Remove the if statements from these functions.
-//Replace them with the conditional operator
 
 
-function desirability(x) {
-    if(x == 'Brad Pitt') {
-        return "very desirable";
-    } else {
-        return "not so desirable";
-    }
-}
+var results = [
+    "very desirable",
+    "also desirable",
+    "not desirable",
+    "not so desirable"
+];
 
-function broadenHorizon(x) {
-    if(x == 'Brad Pitt') {
-        return "very desirable";
-    } else if(x == 'Angelina Jolie') {
-        return "also desirable";
-    } else {
-        return "not desirable";
-    }
-}
+var desirability = (x) => x === "Brad Pitt" ? results[0] : results[3]
+var broadenHorizon = (x) => x === "Brad Pitt" ? results[0] : x === "Angelina Jolie" ? results[1] : results[2]
 
 module.exports = {desirability, broadenHorizon}

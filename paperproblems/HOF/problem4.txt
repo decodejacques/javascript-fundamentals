@@ -1,3 +1,10 @@
+/* 
+
+we pass f( k and m), k and m become g and h, return k(m, 1, 4), k(f=m,i=1, j=4) becomes return m(1+2) + 4 * 2, gets to m(3) 6 + 8 = 14
+
+
+*/
+
 What is the output of this program? Don't cheat by running it!
 
 function m(x) {

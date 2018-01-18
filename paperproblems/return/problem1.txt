@@ -1,4 +1,4 @@
-What does this program output?
+What does this program output? - 5
 
 function f() {
     return 5;

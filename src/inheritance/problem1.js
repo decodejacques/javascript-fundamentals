@@ -4,8 +4,20 @@ class Shape {
     }
 }
 
-class Rectangle {
+class Rectangle extends Shape{
+    constructor (x, y) {
+        super();
+        this.width = x;
+        this.length = y;
+    }
 
+    area() {
+        return this.width * this.length;
+    }
+
+    perimeter() {
+        return this.width * 2 + this.length * 2;
+    }
     // A rectangle is a shape
     // Every rectangle has a width and a height
     // Implement the constructor
@@ -13,7 +25,13 @@ class Rectangle {
     // The constructor has two arguments: width and height
 }
 
-class Square {
+class Square extends Rectangle{
+    constructor (x) {
+        super();
+        this.length = x;
+        this.width = x;
+    }
+
     // A square is a rectangle
     // Every square has a width and a height
     // The height and width of a square are always the same

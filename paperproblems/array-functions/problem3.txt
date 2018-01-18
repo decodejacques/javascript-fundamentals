@@ -11,3 +11,14 @@ var animalNames = animals.map(
                     function(animal) {return animal.name});
 
 console.log(animalNames.join());
+
+
+---------------------
+
+anon function to make a new array called animal Names. it returns animal.name, so id have an array with the 5/6 names.then the console log joins them. so..
+
+NachoRamsesFlufftailPopcornNeckbeard
+
+which coincidentally sounds like a repl file name.
+
+nope... it still has the , inbetween each name. so join() does not join them all as a string, but rather takes each individual array index and puts it into one.
