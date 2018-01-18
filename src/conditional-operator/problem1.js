@@ -6,7 +6,6 @@ function desirability(x) {
 
 function broadenHorizon(x) {
     return x == 'Brad Pitt'? "very desirable" : x == 'Angelina Jolie'? "also desirable" : "not desirable";
-
 }
 
 module.exports = {desirability, broadenHorizon}

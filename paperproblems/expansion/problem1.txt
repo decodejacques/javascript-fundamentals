@@ -1,0 +1,11 @@
+// Expand each of the following
+// #1
+console.log(({foo: 6}).foo + [1,2,3].length)
+// #2
+(new Array()).concat(5).concat(3).length
+// #3
+while([].filter(y => y > 1).length > 3) {}
+// #4
+[].concat((() => 4)())
+// #5
+({foo: [4]}).foo[0] + [5,6,10][2]
