@@ -6,6 +6,9 @@ Specifically:
  - What are the types of the parameters
  - What does it do?
 
+
+Map is a function that takes two parakeets. The first is an array and the second is function. Map will pass each element in array to the function and return the results in a new array. 
+
 var someNumbers = [1, 2, 3, 4];
 var someStrings = ["bob", "ERIC"];
 

@@ -12,4 +12,8 @@ function f(g, h) {
     return g(h, 1, 4);
 }
 
+
+
 console.log(f(k, m));
+
+Nan

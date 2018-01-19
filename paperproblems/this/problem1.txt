@@ -9,3 +9,8 @@ function foo() {
 var obj = {bar: foo, baz: 8};
 obj.bar();
 
+8
+
+
+
+

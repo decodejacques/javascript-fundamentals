@@ -1,4 +1,4 @@
-Draw the object diagram for this program
+ Draw the object diagram for this program
 
 var x1 = {};
 var x2 = {};

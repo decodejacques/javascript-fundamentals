@@ -23,3 +23,6 @@ function g() {
 }
 
 g();
+
+500
+"some error"

@@ -1,7 +1,7 @@
 Draw the object diagram for the following program. 
 Hints: 
-  - There are two variables: makePerson and bob
-  - makePerson has a property called prototype
+  - There are two variables: Person and bob
+  - Person has a property called prototype
   - bob has properties constructor and __proto__
 
 function Person(name, age) {

@@ -10,3 +10,10 @@ function call(f) {
 }
 
 call(greet);
+
+
+var greet = function (x,y){console.log("hello" + x + " " + y);
+
+Var call = function (f){f("bob", "dole")};
+
+(function(f){f("bob", "dole");})(function(x,y){console.log("hello" + x + " " +y);})
