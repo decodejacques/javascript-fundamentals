@@ -40,8 +40,9 @@ function greetLong(lst) {
 }
 
 function allLong(lst) {
-    for (i in lst) {lst[i].length > 4 ? true : false};
-    
+    for (i of lst) {
+        return i.length >= 5 ? true : false;
+    }
     // lst is an array of strings
     // Returns true if every element of lst is of length at least 5. Otherwise returns false.
 }
