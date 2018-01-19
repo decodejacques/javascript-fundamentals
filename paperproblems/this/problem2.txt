@@ -10,3 +10,5 @@ var obj = {
 var g = obj.bar;
 g();
 
+undefined
+

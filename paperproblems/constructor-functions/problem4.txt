@@ -13,3 +13,5 @@ var bob = Person("Bob", 30);
 bob.name = bob.name + " Dole";
 
 bob.greet();
+
+error - need New in order to work, otherwise greet is not linked to bob. 

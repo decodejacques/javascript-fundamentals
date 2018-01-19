@@ -12,3 +12,5 @@ You get the following exception:
 
 a) Explain what this exception means.
 b) Why does this exception exist? What's wrong with a cyclic __proto__ value?
+
+This is a cyclic __proto__ value because the proto of the object which a points to, is being pointed at the proto of b. B is pointing back proto of a, creating a loop that will never end. If you are looking for something in proto of a and it has been pointed at the proto of b b, it  then look in the proto of b, if there is nothing there, it would normally then go to the global proto and look there. If it couldn't find it there it would return an error. However if the proto of b is also pointing BACK at a, then it will continue looking forever, never reaching the global proto. 

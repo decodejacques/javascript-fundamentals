@@ -11,3 +11,7 @@ var animalNames = animals.map(
                     function(animal) {return animal.name});
 
 console.log(animalNames.join());
+
+"Nacho,Ramses,Flufftail,Popcorn,Neckbeard," 
+
+// empty string takes a place in the array, but does not appear in the string exactly, but you know it's there because there is a comma after Neckbeard indicating that neckbeard is not the last element in the array. if the last name were undefined, it would look the same as it does here. 

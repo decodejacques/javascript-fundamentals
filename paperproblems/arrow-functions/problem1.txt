@@ -4,16 +4,30 @@ For each of the following expressions:
 
 a) x => x + 1
 
+(no. Input numbers, output numbers)
+
 b) x, y => x * y
+
+Syntax error : if more than one parameter, parentheses required on parameters
 
 c) x => { x * 2 }
 
+(no. inputs number, output number )
+
 d) (x, z) => {console.log(z); return x * z}
+
+(no. inputs number, output number)
 
 e) x => console.log(z); return x * z
 
+(Syntax error. if more than one line of code, curly braces are required)
+
 f) (x) => x * 2
 
+(No, input number output number)
+
 e) () => console.log("hello")
+
+no.input? Output = string
 
 When you're done, check all your answers in the developer console.

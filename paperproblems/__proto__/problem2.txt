@@ -9,9 +9,14 @@ x3.__proto__ = x2;
 x4.__proto__ = x3;
 
 x1.age = 20;
-x3.age = 18;
+x3.age = 18; 
 
 console.log(x1.age);
 console.log(x2.age);
 console.log(x3.age);
 console.log(x4.age);
+
+20
+20
+18
+18

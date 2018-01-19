@@ -1,5 +1,15 @@
 
+
 function callNoException(f, arg) {
+    try {
+        f(arg);       
+    }catch (err){
+        return null
+    }
+    return f(arg);
+}
+   
+
     // if f(arg) throws an exception, return null
     // otherwise return what f(arg) returned
     // Example:
@@ -9,9 +19,22 @@ function callNoException(f, arg) {
     //  }
     //  callNoException(throwsZero, 0) returns null
     //  callNoException(throwsZero, 12) returns 12
+
+funciton g() {
+    var ret = f(arg);
+    if (ret ===null) throw new Error ("oh no");
+    return ret;
 }
 
-function callNoNull(f, arg) {
+
+    function callNoNull(f, arg) {
+   
+    if (f(arg) === null){
+        throw new Error ("function returns null");
+    }else {
+        return f(arg)
+}
+}
     // if f(arg) returns null, throw an exception
     // otherwise return what f(arg) returned  
     // Example: 
@@ -22,10 +45,31 @@ function callNoNull(f, arg) {
     // callNoNull(nullZero, 0) throws an exception
     // callNoNull(nullZero, 12) returns 12
     
+
+
     
-}
 
 function exceptionalize(f) {
+    function f(arg){
+        if(arg==0) return null;
+        return arg;
+    }
+    function g(arg){
+        if (f(arg)=== null) throw new Error('is null');
+    }
+    try {
+        g(arg);
+    }catch (err){
+        return err
+    }
+    return f(arg);
+}
+
+
+  
+
+
+
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) is null, this new function throws an exception
@@ -40,9 +84,19 @@ function exceptionalize(f) {
     // g(0) throws an exception
     // g(12) returns 12
 
-}
 
 function nullify(f) {
+
+    function g(arg)
+        try {
+            return f(arg);
+        }catch (err) {
+            return null;
+            }
+        }
+        return g;
+
+
     // returns a new function
     // this function takes 1 input, called arg
     // if f(arg) throws an exception, this new function returns null
@@ -56,9 +110,15 @@ function nullify(f) {
     //  g(0) returns null
     //  g(12) throws an exception
     
-}
+
 
 function map(lst, f) {
+    newArr = lst.map(function(element){return f(element)})
+    return newArr;
+}
+
+
+
     // lst is an array and f is a function
     // map returns an array with the same number of elements as lst
     // if lst = [a1, a2, a3, a4, a5] then map(lst, f) returns [f(a1), f(a2), f(a3), f(a4), f(a5)]
@@ -69,9 +129,13 @@ function map(lst, f) {
     //
     // function toUpperCase(str) { return str.toUpperCase(); }
     // map(["bob", "susie"], toUpperCase) returns ["BOB", "SUSIE"]
-}
 
+// function f (x){return x % 2 == 0};
 function filter(lst, f) {
+    lst_ = lst.filter(function f (x){return x % 2 !== 0});
+    return lst_;
+
+    }
     // lst is an array and f is a function
     // f takes one argument and returns a boolean (true or false)
     // filter(lst, f) returns a list with all the elements of lst that does not satisfy f removed
@@ -83,17 +147,21 @@ function filter(lst, f) {
     // Example:
     // function isEven(x) {return x % 2 == 0;}
     // filter([1, 2, 3, 4, 5], isEven) returns [2,4];   
-}
 
+   
 function every(lst, f) {
+    var boo = lst.every(function f(x){return x % 2 == 0});
+         return boo;
+    
+}
     // lst is an array and f is a function
     // f takes 1 arguments and returns a boolean
-    // filter(lst, f) returns a true if f returns true for every element of lst
+    // every (lst, f) returns a true if f returns true for every element of lst
     
     // Example
     // every([2,4,12], x => x % 2 == 0) returns true
     // every([2,3,12], x => x % 2 == 0) returns false    
-}
+
 
 
 module.exports = {

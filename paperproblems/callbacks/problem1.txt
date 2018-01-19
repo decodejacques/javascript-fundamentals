@@ -13,3 +13,5 @@ function h() {
 }
 
 setTimeout(h, 200);
+
+After 1700ms console.log hello

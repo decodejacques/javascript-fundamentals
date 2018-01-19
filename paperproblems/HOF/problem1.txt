@@ -7,6 +7,8 @@ Specifically:
  - What does it do?
 
 
+Filter is a function that takes two parameters. The first is an array, and the second is a function. The filter function goes through every element of the array and returns all elements in a new object that pass the second function's test. 
+
 
 var evenNumbers = [2, 4, 6, 8, 10];
 var oddNumbers = [3, 5, 7, 9];
