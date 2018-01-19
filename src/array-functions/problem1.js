@@ -1,3 +1,5 @@
+// You are not allowed to use a for loop or a while loops for any of these questions. Instead, use filter, map, etc...
+
 function removeEvens(lst) {
     // lst is an array of numbers
     // Returns a new list with all the even numbers of lst removed
