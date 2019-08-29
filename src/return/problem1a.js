@@ -5,8 +5,9 @@ function f(x) {
         return "hello";
     } else if(x > 5) {
         return "goodbye";
-    } 
-
+    } else {
+        return undefined;
+    }
 }
 
 

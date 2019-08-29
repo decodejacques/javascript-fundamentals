@@ -3,10 +3,11 @@ You don't know what it does, but there are clues at the bottom of this file
 Use these clues to describe what filter is.
 Specifically:
  - How many parameters does it have
+two
  - What are the types of the parameters
+array, function
  - What does it do?
-
-
+it takes an array and applies a function which assesses whether or not an element of an array is divisible by itself, depending on if the function returns a boolean of true the element is either passed to a new array using.push or ignored from this new array.
 
 var evenNumbers = [2, 4, 6, 8, 10];
 var oddNumbers = [3, 5, 7, 9];
