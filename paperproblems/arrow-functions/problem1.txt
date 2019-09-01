@@ -2,18 +2,18 @@ For each of the following expressions:
  - Does it have a syntax error?
  - If it doesn't have a syntax error, what are the probable input and output types of the function?
 
-a) x => x + 1
+a) x => x + 1  //no syntax error, input type: number, output type: number
 
-b) x, y => x * y
+b) x, y => x * y //need () for the arguments, input type: number, output type: number
 
-c) x => { x * 2 }
+c) x => { x * 2 } //need no {} OR a return before x*2, input type: number, output type: number
 
-d) (x, z) => {console.log(z); return x * z}
+d) (x, z) => {console.log(z); return x * z} //no syntax error, input type: number, output type: number
 
-e) x => console.log(z); return x * z
+e) x => console.log(z); return x * z //need {} andz must be defined, input type: number, output type: number
 
-f) (x) => x * 2
+f) (x) => x * 2 //ok but you remove () for the parameter, input type: number, output type: number
 
-e) () => console.log("hello")
+e) () => console.log("hello") //no syntax error, input type: none, output type: string
 
 When you're done, check all your answers in the developer console.

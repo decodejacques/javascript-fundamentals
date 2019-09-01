@@ -12,3 +12,9 @@ function f() {
 f();
 f();
 console.log(y);
+
+//output:
+
+7
+9
+3

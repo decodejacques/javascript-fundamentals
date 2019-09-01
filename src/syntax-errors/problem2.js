@@ -14,7 +14,7 @@ var myObj = {
     },
 
     beers: function() {
-        function g(){}}
+        function g(){}
         
         // lots and lots of code
     },

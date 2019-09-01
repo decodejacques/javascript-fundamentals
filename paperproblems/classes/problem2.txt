@@ -12,7 +12,7 @@ class Person {
     }
     toString() {
         return "My name is " + this.name +
-          "and I'm " + this.age + " and I make " + this.salary;
+          " and I'm " + this.age + " and I make " + this.salary;
     }
 }
 
@@ -20,3 +20,7 @@ var bob = new Person(25, "Bob", 40000);
 
 bob.increaseSalary(-500);
 console.log(bob.toString());
+
+//output: 
+Yay!
+My name is Bob and I'm 25 and I make 39500

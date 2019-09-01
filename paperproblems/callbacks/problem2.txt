@@ -9,3 +9,8 @@ function h() {
 }
 
 setInterval(h, 1000);
+
+//This program calls h() every second
+//h() calls g() every second
+//g() logs "Hello!"
+//There is an "Hello!" more at each call

@@ -13,3 +13,5 @@ function h() {
 }
 
 setTimeout(h, 200);
+
+//This programme log "Hello!" after 1700 ms

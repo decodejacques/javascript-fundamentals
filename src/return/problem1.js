@@ -3,13 +3,7 @@
 // Also, remove these comments
 
 function f(x) {
-    if(x > 10) {
-        return "hello";
-    } else if(x > 5) {
-        return "goodbye";
-    } else {
-        return undefined;
-    }
+    return x > 10 ? "hello" : x > 5 ? "goodbye" : undefined;
 }
 
 module.exports = f; // Don't delete this line but remove this comment.

@@ -8,3 +8,7 @@ function f() {
 
 f();
 f();
+
+output:
+2
+2
