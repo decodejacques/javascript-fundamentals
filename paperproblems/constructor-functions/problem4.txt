@@ -13,3 +13,7 @@ var bob = Person("Bob", 30);
 bob.name = bob.name + " Dole";
 
 bob.greet();
+
+----------------
+
+Well I'd guess..."Hello my name is Bob Dole", but that of course would be wrong because the console.log is being called from the function() which has no damn context.

@@ -15,5 +15,15 @@ function soften(f) {
 }
 
 var softAskOnADate = soften(askOnADate);
+
 console.log(softAskOnADate("Eric"));
 console.log(softAskOnADate("Bob"));
+
+-----------------------
+The answer is unnecessary rejection.
+
+Eric is a maybe Bob is I do.
+
+
+
+

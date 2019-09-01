@@ -10,3 +10,9 @@ var obj = {
 obj.bar = obj.bar.bind({baz: 4});
 
 obj.bar();
+
+----------------
+
+4
+
+I got this right, but it wasn't exacty a confident call

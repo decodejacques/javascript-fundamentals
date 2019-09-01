@@ -14,3 +14,11 @@ var letterN = animals.filter(function(animal) {
 });
 
 console.log(letterN[0].name);
+
+
+----------------------------
+
+another anon function, which if i understand it right, if the animal name is not undefined, and the first letter is N, then add it to the array. so Nacho and Neckbeard. 
+now... the console log... wtf is going on... array0 the first name which id assume would be nacho cause of execution order.. so
+
+Nacho

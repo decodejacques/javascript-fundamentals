@@ -1,3 +1,9 @@
+/* man I hate this abc shit
+
+f(k) => f(g) where g is k so returns k(3,5), so i is 3 and j is 5 returns 3+2+5*2, 5*2 is 10 + 5 = 15 
+
+*/
+
 What is the output of this program? Don't cheat by running it!
 
 function k(i, j) {

@@ -11,9 +11,21 @@ function Person(name, age) {
 var bob = new Person("Bob", 30);
 
 bob.constructor.prototype.salary = 40000;
+
 bob.__proto__.salary = bob.__proto__.salary + 100;
 Person.prototype.salary = Person.prototype.salary + 300;
 Person.__proto__.salary = Person.__proto__.salary + 400;
 bob.salary = bob.salary + 50;
 
 console.log(bob.salary);
+
+-----------------
+
+40000
+  100
+  300
+  400
+   50
+40850 - since all of the calls are adding money to the same value.... right?.... wrong....
+
+damn it... Person.__proto__.salary is not a thing. bob can have a proto, Person can have a prototype, so 40450 is the answer

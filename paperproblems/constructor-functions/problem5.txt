@@ -1,6 +1,5 @@
 Rewrite this program so that it does't use the new keyword.
 The program must be equivalent in every other way.
-(You would never do this in production. This is for learning purposes)
 
 function Person(name, age) {
     this.name = name;
@@ -11,4 +10,13 @@ function Person(name, age) {
 }
 
 var bob = new Person("Bob", 30);
-var sue = new Person("Sue", 24);
+
+-------------------- 
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = () => {console.log("Hello my name is " + this.name);}
+}
+
+var bob = new Person("Bob", 30);
